@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:               Joshwin Greene
+tagline:             'Developer/Designer @ ScholarDev Apps'
+description:         'As you see, this site is a <span style="color:white;">work in progress</span>. However, in the meantime, feel free to follow me on Twitter <a href="https://twitter.com/josh_w_g" target="_blank">@josh_w_g</a> or on <a href="https://plus.google.com/u/0/+JoshwinGreene" target="_blank">Google+</a>.'
 url:                 http://lanyon.getpoole.com
 baseurl:             /
 paginate:            5
