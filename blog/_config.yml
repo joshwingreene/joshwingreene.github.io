@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Blog
+tagline:          'A Jekyll theme'
+description:      'more articles to come...'
+url:              http://hyde.getpoole.com
+baseurl:          /blog
+
+author:
+  name:           'Joshwin Greene'
+  url:            https://twitter.com/josh_w_g
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
