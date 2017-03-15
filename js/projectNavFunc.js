@@ -1,7 +1,5 @@
 // Manages which section header should be highlighted (full opacity)
 
-var lastSelectedNavElement = null;
-
 $(document).ready(function() {
 	// Add handlers to all a tags that have the nav-item class
 	$('.nav-item').click(switchNavSelection);
