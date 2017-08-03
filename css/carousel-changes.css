@@ -1,0 +1,9 @@
+.carousel-indicators li {
+  background-color: gray;
+}
+.carousel-indicators .active {
+  background-color: orange;
+}
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}

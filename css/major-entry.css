@@ -1,0 +1,11 @@
+body {
+	position: relative;
+}
+
+.entry-ol li p {
+	color: #424242;
+}
+
+ul li:last-child p {
+	margin-bottom: 20px;
+}
