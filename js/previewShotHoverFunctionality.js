@@ -64,13 +64,27 @@ function addHoverFunctionality(element) {
     }
 }
 
-function addMouseOverAndOut(element, origImg, hoverImg) {
+function addMouseOverAndOut(element, origImg, hoverImg) { // Includes touch support
     var imagePath = "img/";
 
+    // Mouse Support
     element.mouseover(function() {
         element.attr('src', imagePath + hoverImg);
     });
     element.mouseout(function() {
         element.attr('src', imagePath + origImg);
+    });
+
+    // Touch Support
+    element.swipe({
+        swipeStatus: function(event, phase, direction, distance, duration) {
+            if (phase=="start") {
+                element.attr('src', imagePath + hoverImg);
+            } else if (phase=="end") {
+                element.attr('src', imagePath + origImg);
+            }
+        },
+        triggerOnTouchLeave:true,
+        threshold: null
     });
 }
