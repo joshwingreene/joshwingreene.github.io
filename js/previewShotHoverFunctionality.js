@@ -64,13 +64,22 @@ function addHoverFunctionality(element) {
     }
 }
 
-function addMouseOverAndOut(element, origImg, hoverImg) {
+function addMouseOverAndOut(element, origImg, hoverImg) { // Added support for touch (mobile)
     var imagePath = "img/";
 
+    // On
     element.mouseover(function() {
         element.attr('src', imagePath + hoverImg);
     });
+    element.touchstart(function() {
+        element.attr('src', imagePath + hoverImg);
+    });
+
+    // Off
     element.mouseout(function() {
+        element.attr('src', imagePath + origImg);
+    });
+    element.touchend(function() {
         element.attr('src', imagePath + origImg);
     });
 }
