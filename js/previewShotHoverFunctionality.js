@@ -52,7 +52,6 @@ function addMouseOverAndOut(element, origImg, hoverImg) { // Includes touch supp
     });
 
     // Touch Support
-    /* (looks like this is no longer needed)
     element.swipe({
         swipeStatus: function(event, phase, direction, distance, duration) {
             if (phase=="start") {
@@ -61,8 +60,6 @@ function addMouseOverAndOut(element, origImg, hoverImg) { // Includes touch supp
                 element.attr('src', imagePath + origImg);
             }
         },
-        triggerOnTouchLeave:true,
-        threshold: null
+        triggerOnTouchLeave:true
     });
-    */
 }
