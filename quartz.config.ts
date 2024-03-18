@@ -15,8 +15,8 @@ const config: QuartzConfig = {
      */
     frontPorchVersion: "1.0.0",
     // ** Add your data here **
-    githubUsername: "DigitalGardeningCollective",
-    gitHubFrontPorchRepoName: "front-porch",
+    githubUsername: "joshwingreene",
+    gitHubFrontPorchRepoName: "joshwingreene.github.io",
     landingPageData: {
       authorName: "Joshwin Greene",
       authorImage: "joshwin-professional-photo.jpg",
@@ -71,7 +71,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "front-porch.digitalgardeningcollective.com",
+    baseUrl: "joshwingreene.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
