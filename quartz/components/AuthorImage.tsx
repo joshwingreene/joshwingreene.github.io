@@ -9,11 +9,6 @@ export default (() => {
         <img class={classNames(displayClass, "author-img")} src={`../../static/author-image/${authorImage}`} alt={`Photo of ${authorName}`} />
     )
   }
-  AuthorImage.css = `
-  .author-img {
-    margin: 0;
-  }
-  `
 
   return AuthorImage
 }) satisfies QuartzComponentConstructor

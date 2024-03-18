@@ -30,6 +30,10 @@
     @media only screen and (max-width: 767) {
         flex-direction: column;
 
+        .author-img {
+            margin: 0;
+        }
+
         #garden-info {
             text-align: center;
 
@@ -95,6 +99,13 @@
             h4 {
                 margin-top: 0;
             }
+        }
+
+        .author-img {
+            margin-top: 1.2rem;
+            margin-left: .5rem;
+            width: 250px;
+            height: 250px;
         }
     }
 }
