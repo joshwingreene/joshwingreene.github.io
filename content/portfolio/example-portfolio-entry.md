@@ -8,6 +8,7 @@ team:
 tech:
   - HTML
   - CSS
+  - JS
 duration: 5 weeks
 role:
   - User Research
