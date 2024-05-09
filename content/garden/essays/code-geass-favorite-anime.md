@@ -4,6 +4,7 @@ tags:
   - anime
 growth-stage: seedling
 date: 2024-04-30 7:50 am
+last-modified: 2024-04-30 7:50
 cover-image: code-geass-cover.jpeg
 cover-image-alt-text: A picture of the main character. The character has his hand over his left eye.
 ---

@@ -10,6 +10,7 @@ tags:
 growth-stage: statue
 contributions-enabled: false
 date: 2020-08-15 8:30 pm
+last-modified: 2024-04-27 8:30 pm
 cover-image: obsidian-essay-2020.png
 cover-image-alt-text: A two-column layout. The first column shows the author's active goals and todo list for the day. The second column shows a graph view of the author's Obsidian vault.
 ---
