@@ -1,5 +1,5 @@
+import { format } from "date-fns";
 import { classNames } from "../util/lang"
-import { getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 function Dates({ fileData, displayClass, cfg }: QuartzComponentProps) {
@@ -16,23 +16,24 @@ function Dates({ fileData, displayClass, cfg }: QuartzComponentProps) {
     const growthStage = fileData.frontmatter?.["growth-stage"];
     const tendedOrEdited = growthStage && typeof growthStage === "string" ? "Tended" : "Edited";
 
-    // -- Temp fix for modifiedDate
+    // -- Temp fix since the daysAgoFormat function is not working as expected
     const modifiedDate = fileData.frontmatter?.["last-modified"];
 
     let updatedDateStr;
 
     if (modifiedDate !== undefined && modifiedDate !== null && (typeof modifiedDate === "string" || typeof modifiedDate === "number")) {
-        updatedDateStr = daysAgoFormat(new Date(modifiedDate), cfg.locale);
+        updatedDateStr = format(modifiedDate, "MMM d, yyyy");
     }
-    // -- End temp fix
 
     const publishedDate = fileData.dates?.published;
 
     let publishedDateStr;
 
     if (publishedDate !== undefined) {
-        publishedDateStr = daysAgoFormat(publishedDate, cfg.locale)
+        publishedDateStr = format(publishedDate, "MMM d, yyyy");
     }
+
+    // -- End temp fix
     
     if (publishedDateStr && updatedDateStr) {
         return (
