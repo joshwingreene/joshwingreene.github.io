@@ -8,6 +8,7 @@ import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import LandingConstructor from "../../components/Landing"
 import ShowcaseItemConstructor from "../../components/ShowcaseItem"
+import ExperienceItemConstructor from "../../components/ExperienceItem"
 import GardenConstructor from "../../components/Garden"
 import CardConstructor from "../../components/Card"
 import RecentlyPublishedConstructor from "../../components/RecentNotes"
@@ -117,13 +118,14 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
   const ReadingTime = ReadingTimeConstructor()
   const CoverImage = CoverImageConstructor()
   const TagList = TagListConstructor()
+  const ExperienceItem = ExperienceItemConstructor()
 
   return {
     name: "ContentPage",
     getQuartzComponents() {
       return [
           Head, Header, Body, ...header, ...beforeBody, pageBody, ...left, ...right, Footer, 
-          Landing, ShowcaseItem,
+          Landing, ShowcaseItem, ExperienceItem,
           Garden, Card, RecentlyPublished,
           GrowthStage, Row, AuthorImageWithName, Dates, Contributions, ReadingTime,
           Team, ToolsOrTech, Role, Duration, Grid, Divider,
@@ -176,7 +178,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
           } else {
             newOpts = { ...opts, ...contributionsDisabledGrowthPiecePageLayout }
           }
-        } else if (slug.includes("portfolio/")) {
+        } else if (slug.includes("portfolio/design")) {
           newOpts = { ...opts, ...portfolioItemPageLayout }
         } else if (slug.includes("about")) {
           newOpts = { ...opts, ...aboutPageLayout }

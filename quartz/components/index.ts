@@ -41,6 +41,7 @@ import SocialIcons from "./SocialIcons"
 import AuthorImage from "./AuthorImage"
 import ReadingTime from "./ReadingTime"
 import CoverImage from "./CoverImage"
+import ExperienceItem from "./ExperienceItem"
 
 export {
   Title,
@@ -85,5 +86,6 @@ export {
   SocialIcons,
   AuthorImage,
   ReadingTime,
-  CoverImage
+  CoverImage,
+  ExperienceItem
 }
