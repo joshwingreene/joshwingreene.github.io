@@ -46,7 +46,7 @@ export default ((userOpts?: Options) => {
                 <div class="experience-item responsive"> 
                     <div class="experience-info">
                         <h3>{experienceItem.title}</h3>
-                        <h4>{experienceItem.duration}</h4>
+                        <p class="experience-duration">{experienceItem.duration}</p>
                         <p><span style={{ fontWeight: "bold" }}>Description:</span> {experienceItem.description}</p>
                         <ul>
                             {experienceItem.responsibilitiesAndWins.map((item) => {
@@ -105,6 +105,16 @@ export default ((userOpts?: Options) => {
         flex-direction: row;
         width: 100%;
         margin-top: 1rem;
+
+        h3, h4, p, ul {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        .experience-duration {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
 
         div {
             display: flex;

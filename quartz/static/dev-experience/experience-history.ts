@@ -2,6 +2,129 @@ import { ExperienceItem } from "../../components/ExperienceItem";
 
 export const devExperienceItems: ExperienceItem[] = [
     {
+        title: "(Productivity) Stealth Startup",
+        duration: "Apr 2024 - Present",
+        image: "default-landing-item-image.jpg",
+        description: "A productivity app that helps people get things done.",
+        responsibilitiesAndWins: [
+            { title: "Developed a prototype that allows me to use a subset of the feature set for personal use" },
+            { title: "Utlitized AI tools, like GitHub Copilot, in order to improve my productivity" }
+        ]
+    },
+    {
+        title: "The Digital Gardening Collective",
+        duration: "Sep 2022 - Present",
+        image: "default-landing-item-image.jpg",
+        description: "The DGC is a living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own. The DGC also maintains open-source technologies in the personal digital gardening arena.",
+        responsibilitiesAndWins: [
+            {  
+                title: "Product 2 - Front Porch (Dec 2023 - Mar 2024)",
+                items: [
+                    { title: "Created an open-source fork of Quartz that serves as a person's website, digital garden, portfolio, 'now' log, and blogroll" }
+                ]
+            },
+            {
+                title: "Product 1 - Open-Source Community Digital Gardening Technology (Jun 2023 - Dec 2023)",
+                items: [
+                    { title: "Led a team of 6 open-source developers in creating a community blogging web app that would be integrated with a digital gardening hub" },
+                    { title: "Created the frontend boilerplate that would be used as the starting point for the team" }
+                ]
+            },
+            {
+                title: "(Canceled) Digital Gardening Hub (Sep 2022 - Dec 2023)",
+                items: [
+                    { title: "Developed a digital gardening hub that would allow users to create a personal digital garden on the platform and submit pieces to community digital gardens that were connected to the platform" }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Bitwise Technology Services",
+        duration: "Jan 2022 - Jun 2023 (On May 29th, everyone was furloughed and then laid off in June.)",
+        image: "default-landing-item-image.jpg",
+        description: "A software development company that specialized in creating custom software solutions for businesses.",
+        responsibilitiesAndWins: [
+            { title: "Served as a full-stack developer on the Internal Tooling Team. We developed and maintained frontend and backend boilerplates for the developers at Bitwise Technology Services. For reference, Bitwise Technology Services was originally called Shift3." },
+            { title: "Frontend Contributions: Link" },
+            { title: "Backend Contributions: Link" }
+        ]
+    },
+    {
+        title: "Make Work Fun",
+        duration: "Jun 2021 - Nov 2022",
+        image: "default-landing-item-image.jpg",
+        description: "Gamify your productivity tools and unlock multiplayer for personal development.",
+        responsibilitiesAndWins: [
+            { title: "Developed the inner workings of the Dailies (Daily Habits) feature and played an active part in designing how daillies should be represented in the Supabase backend, which used PostgreSQL" },
+            { title: "Created the initial version of the Edit Daillies feature using an Ant Design table, which showed the user's list of habits (offered local CRUD functionality)" },
+            { title: "Often referenced the 3 normal forms when we were discussing database design; Provided development guidance for the above two features" },
+            { title: "Contributed to the development of the Parties feature" }
+        ]
+    },
+    {
+        title: "Infosys (Client: Large Healthcare Company)",
+        duration: "Mar 2021 - Dec 2021",
+        image: "default-landing-item-image.jpg",
+        description: "I worked for a large healthcare company while I was an employee at Infosys.",
+        responsibilitiesAndWins: [
+            { 
+                title: "Software Engineer (Sep 2021 - Dec 2021)",
+                items: [
+                    { title: "Analyzed and validated WCF Services that used C# and stored procedures" },
+                    { title: "Prepared test data for the development environment while doing the above analysis" }
+                ]
+            },
+            {
+                title: "Technical Support Engineer (Mar 2021 - Sep 2021)",
+                items: [
+                    { title: "Troubleshooted issues and wrote queries that fixed issues in the production database" },
+                    { title: "Created SQL queries for business analysts and project managers" },
+                    { title: "Created excel reports that were included in executive reports via automated SQL queries " }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Revature",
+        duration: "Dec 2020 - Mar 2021",
+        image: "default-landing-item-image.jpg",
+        description: "A software development training program that prepares you for a career in software development, in addition to having you interview with their client companies (ex. Infosys).",
+        responsibilitiesAndWins: [
+            {
+                title: "Project 3 - RVTR Campsite (Feb 2021 - Feb 2021)",
+                items: [
+                    { title: "Served as the team leader for one of the four teams; Participated in the daily team lead/scrum, standup, and code review meetings." },
+                    { title: "Added features to the Account API, in addition to refactoring code." },
+                    { title: "Supported my team in making enhancements to the Angular web application." },
+                    { title: "Reviewed pull requests; Informed the team-wide lead know which pull requests from my team were ready so that they could be reviewed and merged into the upstream repository" }
+                ]
+            },
+            {
+                title: "Project 2 - Revature Dev Tribune (Jan 2021 - Feb 2021)",
+                items: [
+                    { title: "Served as one of the two leads for this 3-person team; Provided the vision for the project; Created wireframes." },
+                    { title: "Played an active role in defining the different properties for all of our domain classes and how the multiplicity relationships should be represented in our SQL Server." },
+                    { title: "Corrected the service-side endpoints that dealt with article creation, editing, and deletion." },
+                    { title: "Implemented the MVC functionality that allows (1) authors to view all articles and create, edit, and delete articles (2) readers to filter articles by topic." },
+                    { title: "Used bootstrap to style all of the pages that I worked on; Made it so that the general layout styling would be dependent on whether the user is an author, reader, or guest." },
+                    { title: "Corrected the YAML script so that it would deploy our MVC and API docker images to separate Azure web app services; Supported other DevOp efforts." },
+                    { title: "Supported efforts to set up security using Okta." }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Project Iota",
+        duration: "May 2020 - Aug 2020",
+        image: "default-landing-item-image.jpg",
+        description: "A save-for-later and digital media aggregator app.",
+        responsibilitiesAndWins: [
+            { title: "Revised the design of Korey (Team Korey's project from below) and rebranded it" },
+            { title: "Used the Newspaper3k python library to develop a basic Flask api that would return the content of articles that were passed to it" },
+            { title: "Developed the mobile and web versions from scratch. Started with the mobile version and was working on the web version. A screenshot of the project is available at the bottom of my website." }
+        ]
+    },
+    {
         title: "Stealth Startup: The Uber for Exotic Dancers",  
         duration: "Mar 2018 - Dec 2018 (7 months total; temporarily left the project from Jul to Oct)",
         image: "default-landing-item-image.jpg",
