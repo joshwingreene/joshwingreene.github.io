@@ -5,9 +5,15 @@ export const isObject = (value: unknown): value is Record<string, unknown> => {
     return value !== null && typeof value === 'object';
 };
 
+type Link = {
+    title: string
+    url: string
+    prefixText?: string
+}
+
 type Item = {
     title: string
-    subItems?: string[]
+    subItems?: string[] | Link[]
 }
 
 type Section = {
@@ -35,6 +41,10 @@ const isSection = (data: unknown): data is Section => {
 
 const isItem = (data: unknown): data is Item => {
     return isObject(data) && data.items === undefined;
+}
+
+const isLink = (data: unknown): data is Link => {
+    return isObject(data) && data.url !== undefined;
 }
 
 export default ((userOpts?: Options) => {
@@ -72,6 +82,10 @@ export default ((userOpts?: Options) => {
                                             </ul>
                                         </li>
                                     )
+                                } else if (isLink(item)) {
+                                    return item.prefixText && (
+                                        <li>{ item.prefixText }{` `}<a href={item.url} target="_target">{ item.title }</a></li>
+                                    )
                                 } else if (isItem(item)) {
                                     return (
                                        <li>
@@ -79,13 +93,17 @@ export default ((userOpts?: Options) => {
                                           { item.subItems &&
                                                 <ul>
                                                     {item.subItems.map((subItem) => {
-                                                        return <li>{subItem}</li>
+                                                        if (isLink(subItem)) {
+                                                            return <li><a href={subItem.url} target="_target">{ subItem.title }</a></li>
+                                                        } else {
+                                                            return <li>{subItem}</li>
+                                                        }
                                                     })}
                                                 </ul>
                                           }
                                        </li>
                                     )
-                                } else {
+                                }  else {
                                     return <li>Unknown</li>
                                 }
                             })}
@@ -109,6 +127,10 @@ export default ((userOpts?: Options) => {
         h3, h4, p, ul {
             margin-top: .5rem;
             margin-bottom: .5rem;
+        }
+
+        span {
+            font-weight: bold;
         }
 
         .experience-duration {

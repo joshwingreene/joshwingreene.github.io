@@ -45,8 +45,15 @@ export const devExperienceItems: ExperienceItem[] = [
         description: "A software development company that specialized in creating custom software solutions for businesses.",
         responsibilitiesAndWins: [
             { title: "Served as a full-stack developer on the Internal Tooling Team. We developed and maintained frontend and backend boilerplates for the developers at Bitwise Technology Services. For reference, Bitwise Technology Services was originally called Shift3." },
-            { title: "Frontend Contributions: Link" },
-            { title: "Backend Contributions: Link" }
+            { prefixText: "Frontend Contributions:", title: "React Boilerplate", url: "https://github.com/Shift3/boilerplate-client-react/pulls?page=1&q=is%3Apr+is%3Aclosed+author%3Ajoshwingreene" },
+            {
+                title: "Backend Contributions:",
+                subItems: [
+                    { title: "NestJS Boilerplate", url: "https://github.com/Shift3/boilerplate-server-node/pulls?q=is%3Apr+is%3Aclosed+author%3Ajoshwingreene" },
+                    { title: "Django Boilerplate", url: "https://github.com/Shift3/dj-starter/pulls?q=is%3Apr+is%3Aclosed+author%3Ajoshwingreene" }
+                ]
+            }
+            
         ]
     },
     {
