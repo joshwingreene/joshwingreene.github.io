@@ -1,16 +1,40 @@
 // import { ShowcaseItem } from "../cfg"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
+export const isObject = (value: unknown): value is Record<string, unknown> => {
+    return value !== null && typeof value === 'object';
+};
+
+type Item = {
+    title: string
+    subItems?: string[]
+}
+
+type Section = {
+    title: string
+    items: Item[] 
+}
+
 export type ExperienceItem = {
     image: string
     title: string
     description: string
-    responsibilitiesAndWins: string[]
-    githubURL: string
+    duration: string
+    responsibilitiesAndWins: unknown[]
+    githubURL?: string
+    learnMoreURL?: string // Used to put a link to the right of the description
 }
 
 interface Options {
     experienceItem: ExperienceItem
+}
+
+const isSection = (data: unknown): data is Section => {
+    return  isObject(data) && data.items !== undefined;
+}
+
+const isItem = (data: unknown): data is Item => {
+    return isObject(data) && data.items === undefined;
 }
 
 export default ((userOpts?: Options) => {
@@ -22,10 +46,48 @@ export default ((userOpts?: Options) => {
                 <div class="experience-item responsive"> 
                     <div class="experience-info">
                         <h3>{experienceItem.title}</h3>
-                        <p>{experienceItem.description}</p>
+                        <h4>{experienceItem.duration}</h4>
+                        <p><span style={{ fontWeight: "bold" }}>Description:</span> {experienceItem.description}</p>
                         <ul>
                             {experienceItem.responsibilitiesAndWins.map((item) => {
-                                return <li>{item}</li>
+                                if (isSection(item)) {
+                                    return (
+                                        <li>
+                                            <h4>{item.title}</h4>
+                                            <ul>
+                                                {item.items.map((i) => {
+                                                    return (
+                                                        <div>
+                                                            <li>{i.title}</li>
+                                                            { i.subItems &&
+                                                                <ul>
+                                                                    {i.subItems.map((subItem) => {
+                                                                        return <li>{subItem}</li>
+                                                                    })}
+                                                                </ul>
+                                                            }
+                                                        </div>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </li>
+                                    )
+                                } else if (isItem(item)) {
+                                    return (
+                                       <li>
+                                          <p>{item.title}</p>
+                                          { item.subItems &&
+                                                <ul>
+                                                    {item.subItems.map((subItem) => {
+                                                        return <li>{subItem}</li>
+                                                    })}
+                                                </ul>
+                                          }
+                                       </li>
+                                    )
+                                } else {
+                                    return <li>Unknown</li>
+                                }
                             })}
                         </ul>
                     </div>
@@ -62,6 +124,7 @@ export default ((userOpts?: Options) => {
         img {
             display: flex;
             width: 200px;
+            height: 200px;
             padding: 0 1rem;
             flex: 2;
         }

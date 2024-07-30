@@ -9,6 +9,7 @@ import { htmlToJsx } from "../../util/jsx"
 import { i18n } from "../../i18n"
 import * as Component from "../../components"
 import { ExperienceItem } from "../ExperienceItem"
+import { devExperienceItems } from "../../static/dev-experience/experience-history"
 
 interface FolderContentOptions {
   /**
@@ -41,23 +42,6 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       ...props,
       allFiles: allPagesInFolder,
     }
-
-    const devExperienceItems: ExperienceItem[] = [
-      {
-          image: "default-landing-item-image.jpg",
-          title: "Placeholder Entry",
-          description: "I am a software engineer with a passion for building software that solves real-world problems.",
-          responsibilitiesAndWins: [
-              "Built a full-stack web application that allows users to create, read, update, and delete notes.",
-              "Implemented a RESTful API using Node.js and Express.js.",
-              "Designed and implemented a PostgreSQL database schema to store user data.",
-              "Utilized React.js to create a responsive and user-friendly front-end.",
-              "Implemented authentication and authorization using JWT and bcrypt.",
-              "Deployed the application to Heroku.",
-          ],
-          githubURL: ""
-      }
-    ];
 
     return (
       folderSlug === "portfolio/dev" ?
