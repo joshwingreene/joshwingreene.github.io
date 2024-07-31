@@ -21,8 +21,14 @@ type Section = {
     items: Item[] 
 }
 
+type ImageData = {
+    name: string
+    isSquare: boolean
+    hasBorder?: boolean
+}
+
 export type ExperienceItem = {
-    image: string
+    image: ImageData
     title: string
     description: string
     duration: string
@@ -109,7 +115,13 @@ export default ((userOpts?: Options) => {
                             })}
                         </ul>
                     </div>
-                    <image class="experience-img" src={`../../static/dev-experience/${experienceItem.image}`} alt={`${experienceItem.title} Preview Image`} />
+                    <image 
+                        class={`experience-img ${experienceItem.image.isSquare ? 'img-squared' : 'img-not-squared'}
+                                ${experienceItem.image.hasBorder ? 'img-with-border' : ''}
+                            `} 
+                        src={`../../static/dev-experience/${experienceItem.image.name}`} 
+                        alt={`${experienceItem.title} Preview Image`} 
+                    />
                 </div>
             )                
         } else {
@@ -124,13 +136,15 @@ export default ((userOpts?: Options) => {
         width: 100%;
         margin-top: 1rem;
 
+        .experience-info {
+            display: flex;
+            flex: 3;
+            margin-right: 1rem;
+        }
+
         h3, h4, p, ul {
             margin-top: .5rem;
             margin-bottom: .5rem;
-        }
-
-        span {
-            font-weight: bold;
         }
 
         .experience-duration {
@@ -141,7 +155,6 @@ export default ((userOpts?: Options) => {
         div {
             display: flex;
             flex-direction: column;
-            flex: 3;
 
             h3, p {
                 color: var(--dark);
@@ -155,10 +168,22 @@ export default ((userOpts?: Options) => {
 
         img {
             display: flex;
-            width: 200px;
-            height: 200px;
-            padding: 0 1rem;
+            padding: 0;
             flex: 2;
+        }
+
+        .img-squared {
+            width: 250px;
+            height: 250px;
+        }
+
+        .img-not-squared {
+            width: 200px;
+            max-height: 400px;
+        }
+
+        .img-with-border {
+            border: 1px solid #ccc;
         }
     }
     `

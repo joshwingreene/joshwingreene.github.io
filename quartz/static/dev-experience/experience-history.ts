@@ -4,7 +4,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "(Productivity) Stealth Startup",
         duration: "Apr 2024 - Present",
-        image: "default-landing-item-image.jpg",
+        image: { name: "productivity-nda-graphic.png", isSquare: true },
         description: "A productivity app that helps people get things done.",
         responsibilitiesAndWins: [
             { title: "Developed a prototype that allows me to use a subset of the feature set for personal use" },
@@ -14,7 +14,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "The Digital Gardening Collective",
         duration: "Sep 2022 - Present",
-        image: "default-landing-item-image.jpg",
+        image: { name: "../landing-showcase/dgc-showcase-image.png", isSquare: true },
         description: "The DGC is a living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own. The DGC also maintains open-source technologies in the personal digital gardening arena.",
         responsibilitiesAndWins: [
             {  
@@ -41,7 +41,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Bitwise Technology Services",
         duration: "Jan 2022 - Jun 2023 (On May 29th, everyone was furloughed and then laid off in June.)",
-        image: "default-landing-item-image.jpg",
+        image: { name: "bitwise-boilerplate-preview.png", isSquare: true, hasBorder: true },
         description: "A software development company that specialized in creating custom software solutions for businesses.",
         responsibilitiesAndWins: [
             { title: "Served as a full-stack developer on the Internal Tooling Team. We developed and maintained frontend and backend boilerplates for the developers at Bitwise Technology Services. For reference, Bitwise Technology Services was originally called Shift3." },
@@ -59,7 +59,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Make Work Fun",
         duration: "Jun 2021 - Nov 2022",
-        image: "default-landing-item-image.jpg",
+        image: { name: "make-work-fun-dailies-preview.png", isSquare: true },
         description: "Gamify your productivity tools and unlock multiplayer for personal development.",
         responsibilitiesAndWins: [
             { title: "Developed the inner workings of the Dailies (Daily Habits) feature and played an active part in designing how daillies should be represented in the Supabase backend, which used PostgreSQL" },
@@ -71,7 +71,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Infosys (Client: Large Healthcare Company)",
         duration: "Mar 2021 - Dec 2021",
-        image: "default-landing-item-image.jpg",
+        image: { name: "healthcare-nda-graphic.png", isSquare: true },
         description: "I worked for a large healthcare company while I was an employee at Infosys.",
         responsibilitiesAndWins: [
             { 
@@ -94,7 +94,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Revature",
         duration: "Dec 2020 - Mar 2021",
-        image: "default-landing-item-image.jpg",
+        image: { name: "revature-logo.png", isSquare: true },
         description: "A software development training program that prepares you for a career in software development, in addition to having you interview with their client companies (ex. Infosys).",
         responsibilitiesAndWins: [
             {
@@ -123,7 +123,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Project Iota",
         duration: "May 2020 - Aug 2020",
-        image: "default-landing-item-image.jpg",
+        image: { name: "iota-preview.png", isSquare: true, hasBorder: true },
         description: "A save-for-later and digital media aggregator app.",
         responsibilitiesAndWins: [
             { title: "Revised the design of Korey (Team Korey's project from below) and rebranded it" },
@@ -134,31 +134,29 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Stealth Startup: The Uber for Exotic Dancers",  
         duration: "Mar 2018 - Dec 2018 (7 months total; temporarily left the project from Jul to Oct)",
-        image: "default-landing-item-image.jpg",
+        image: { name: "stealth-startup-dancers-preview.png", isSquare: true },
         description: "An effort to develop a contract-labor app that would help exotic dancers and club owners work together in a efficient and completely legal way.",
         responsibilitiesAndWins: [
             { title:  "Initially led the development of the React Native frontend; Moved to a support role when I came back to the project in October." },
             { title: "Spearheaded the design for both the web and mobile versions based on the given specfications." },
             { title: "Constructed wireframes and high-fidelity mockups" }
         ],
-        githubURL: ""
     },
     {
         title: "59DaysofCode 2018 Hackathon Entry - Korey",  
         duration: "Jun 2018 - Aug 2018 (occurred while I temporarily left the above project)",
-        image: "default-landing-item-image.jpg",
+        image: { name: "korey-preview.png", isSquare: false, hasBorder: true },
         description: "A mobile app that allows you to save online articles and other digital content for later and consume them right within the app. For reference, I started this endeavor because I discovered a need while working on a independent user experience case study.",
         responsibilitiesAndWins: [
             { title: "Spearheaded the app's design and co-developed the React-Native frontend" },
             { title: "Played an active role in discussions that pertained to the backend" },
             { title:  "Main speaker for both the pitch to the judges and the main stage pitch (audience of at least 100 peopple). We came in second place." }
         ],
-        githubURL: ""
     },
     {
         title: "Project in Human Computer Interaction & Evaluation - Web-based Exergame Tracker",  
         duration: "Apr 2016 - Jun 2016",
-        image: "default-landing-item-image.jpg",
+        image: { name: "hci-eval-project-preview.png", isSquare: true, hasBorder: true },
         description: "A web-based administration system that would allow doctors and trainers to track the exercise data of their Leukemia patients",
         responsibilitiesAndWins: [
             { title: "Participated in architectural discussions that determined what technologies would be used for the backend and front-end", subItems: ["( Backend - Spring / MongoDB | Frontend - HTML / CSS / AngularJS )"] },
@@ -177,7 +175,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Senior Design Project - Thales Group Proof-of-Concept Android App",
         duration: "Jan 2016 - Jun 2016",
-        image: "default-landing-item-image.jpg",
+        image: { name: "senior-design-dev-preview.png", isSquare: false },
         description: "A proof of concept Android application that would allow users to monitor business operations, like fleet performance.",
         githubURL: "",
         responsibilitiesAndWins: [
@@ -207,8 +205,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Software Design II - Final Project (JavaFX)",
         duration: "Feb 2016 - Mar 2016",
-        githubURL: "",
-        image: "default-landing-item-image.jpg",
+        image: { name: "board-game-dev-preview.png", isSquare: true },
         description: "An extensible board game server.",
         responsibilitiesAndWins: [
           { title: "Collaborated with 6 students in order to design and build an extensible board game server, which included a networking component and the following built-in games: Chess, Checkers, Tic-Tac-Toe" },
@@ -221,7 +218,7 @@ export const devExperienceItems: ExperienceItem[] = [
     },
     {
       title: "Mixagram (iOS)",
-      image: "default-landing-item-image.jpg",
+      image: { name: "mixagram-dev-preview.png", isSquare: false },
       duration: "Oct 2014 - Feb 2015",       
       description: "A mobile app for the iPhone that allows users to combine short video clips with music.",
       responsibilitiesAndWins: [
@@ -235,7 +232,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
       title: "Fresno Transit Free",
       duration: "Aug 2011 - Apr 2014",
-      image: "default-landing-item-image.jpg",
+      image: { name: "ftf-dev-preview.png", isSquare: false },
       description: "A mobile bus schedule that improves the experience of Fresno Area Express bus riders.",
       responsibilitiesAndWins: [
         { title: "Spearheaded the design and the development of the user interface and user experience" },
