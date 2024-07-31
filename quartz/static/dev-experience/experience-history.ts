@@ -6,6 +6,18 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Apr 2024 - Present",
         image: { name: "productivity-nda-graphic.png", isSquare: true },
         description: "A productivity app that helps people get things done.",
+        techStack: [
+            "ReactJS", 
+            "NextJS", 
+            "TypeScript", 
+            "JavaScript", 
+            "PostgreSQL", 
+            "Supabase", 
+            "Storybook",
+            "Chakra UI",
+            "HTML",
+            "CSS"
+        ],
         responsibilitiesAndWins: [
             { title: "Developed a prototype that allows me to use a subset of the feature set for personal use" },
             { title: "Utlitized AI tools, like GitHub Copilot, in order to improve my productivity" }
@@ -18,13 +30,31 @@ export const devExperienceItems: ExperienceItem[] = [
         description: "The DGC is a living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own. The DGC also maintains open-source technologies in the personal digital gardening arena.",
         responsibilitiesAndWins: [
             {  
-                title: "Product 2 - Front Porch (Dec 2023 - Mar 2024)",
+                title: "Front Porch (Dec 2023 - Mar 2024)",
+                techStack: [
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "Quartz (Open-Source Static-Site Generator)"
+                ],
                 items: [
                     { title: "Created an open-source fork of Quartz that serves as a person's website, digital garden, portfolio, 'now' log, and blogroll" }
                 ]
             },
             {
-                title: "Product 1 - Open-Source Community Digital Gardening Technology (Jun 2023 - Dec 2023)",
+                title: "Open-Source Community Digital Gardening Technology (Jun 2023 - Dec 2023)",
+                techStack: [
+                    "ReactJS",
+                    "NextJS",
+                    "TypeScript",
+                    "JavaScript",
+                    "PostgreSQL",
+                    "Supabase",
+                    "Storybook",
+                    "Chakra UI",
+                    "HTML",
+                    "CSS"
+                ],
                 items: [
                     { title: "Led a team of 6 open-source developers in creating a community blogging web app that would be integrated with a digital gardening hub" },
                     { title: "Created the frontend boilerplate that would be used as the starting point for the team" }
@@ -32,6 +62,19 @@ export const devExperienceItems: ExperienceItem[] = [
             },
             {
                 title: "(Canceled) Digital Gardening Hub (Sep 2022 - Dec 2023)",
+                techStack: [
+                    "ReactJS",
+                    "NextJS",
+                    "TypeScript",
+                    "JavaScript",
+                    "PostgreSQL",
+                    "Supabase",
+                    "Deno",
+                    "Storybook",
+                    "Chakra UI",
+                    "HTML",
+                    "CSS"
+                ],
                 items: [
                     { title: "Developed a digital gardening hub that would allow users to create a personal digital garden on the platform and submit pieces to community digital gardens that were connected to the platform" }
                 ]
@@ -43,6 +86,18 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Jan 2022 - Jun 2023 (On May 29th, everyone was furloughed and then laid off in June.)",
         image: { name: "bitwise-boilerplate-preview.png", isSquare: true, hasBorder: true },
         description: "A software development company that specialized in creating custom software solutions for businesses.",
+        techStack: [
+            "ReactJS", 
+            "TypeScript", 
+            "JavaScript",             
+            "PostgreSQL",
+            "Storybook",
+            "NestJS", 
+            "Django", 
+            "Python",
+            "HTML",
+            "CSS"
+        ],
         responsibilitiesAndWins: [
             { title: "Served as a full-stack developer on the Internal Tooling Team. We developed and maintained frontend and backend boilerplates for the developers at Bitwise Technology Services. For reference, Bitwise Technology Services was originally called Shift3." },
             { prefixText: "Frontend Contributions:", title: "React Boilerplate", url: "https://github.com/Shift3/boilerplate-client-react/pulls?page=1&q=is%3Apr+is%3Aclosed+author%3Ajoshwingreene" },
@@ -61,6 +116,16 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Jun 2021 - Nov 2022",
         image: { name: "make-work-fun-dailies-preview.png", isSquare: true },
         description: "Gamify your productivity tools and unlock multiplayer for personal development.",
+        techStack: [
+            "ReactJS", 
+            "NextJS",
+            "JavaScript", 
+            "PostgreSQL", 
+            "Supabase",
+            "TailwindCSS",
+            "HTML",
+            "CSS"
+        ],
         responsibilitiesAndWins: [
             { title: "Developed the inner workings of the Dailies (Daily Habits) feature and played an active part in designing how daillies should be represented in the Supabase backend, which used PostgreSQL" },
             { title: "Created the initial version of the Edit Daillies feature using an Ant Design table, which showed the user's list of habits (offered local CRUD functionality)" },
@@ -76,6 +141,13 @@ export const devExperienceItems: ExperienceItem[] = [
         responsibilitiesAndWins: [
             { 
                 title: "Software Engineer (Sep 2021 - Dec 2021)",
+                techStack: [
+                    "SQL",
+                    "Microsoft SQL Server",
+                    "C#",
+                    "WCF Services",
+                    "Excel"
+                ],
                 items: [
                     { title: "Analyzed and validated WCF Services that used C# and stored procedures" },
                     { title: "Prepared test data for the development environment while doing the above analysis" }
@@ -83,6 +155,11 @@ export const devExperienceItems: ExperienceItem[] = [
             },
             {
                 title: "Technical Support Engineer (Mar 2021 - Sep 2021)",
+                techStack: [
+                    "SQL",
+                    "Microsoft SQL Server",
+                    "Excel"
+                ],
                 items: [
                     { title: "Troubleshooted issues and wrote queries that fixed issues in the production database" },
                     { title: "Created SQL queries for business analysts and project managers" },
@@ -99,6 +176,31 @@ export const devExperienceItems: ExperienceItem[] = [
         responsibilitiesAndWins: [
             {
                 title: "Project 3 - RVTR Campsite (Feb 2021 - Feb 2021)",
+                techStack: [
+                    "C#", 
+                    "ASP.NET Web API", 
+                    "MongoDB", 
+                    "ADO.NET Entity Framework", 
+                    "Angular", 
+                    "JavaScript", 
+                    "Testing", 
+                    "DevOps", 
+                    "Docker", 
+                    "HTML5", 
+                    "CSS3", 
+                    "SQL", 
+                    "BDD", 
+                    "TDD", 
+                    "Microsoft Azure", 
+                    ".NET", 
+                    "Continuous Integration", 
+                    "Microservices", 
+                    "TypeScript", 
+                    "Jasmine", 
+                    "Karma", 
+                    "REST", 
+                    "Kubernetes"
+                ],
                 items: [
                     { title: "Served as the team leader for one of the four teams; Participated in the daily team lead/scrum, standup, and code review meetings." },
                     { title: "Added features to the Account API, in addition to refactoring code." },
@@ -108,6 +210,23 @@ export const devExperienceItems: ExperienceItem[] = [
             },
             {
                 title: "Project 2 - Revature Dev Tribune (Jan 2021 - Feb 2021)",
+                techStack: [
+                    "C#", 
+                    "ASP.NET Web API", 
+                    "SQL Server", 
+                    "ADO.NET Entity Framework", 
+                    "HTML", 
+                    "JavaScript", 
+                    "CSS", 
+                    "Microsoft Azure", 
+                    "ASP.NET MVC", 
+                    "YAML", 
+                    "GitHub Actions", 
+                    "Docker", 
+                    "Docker Hub", 
+                    "Okta", 
+                    "xUnit"
+                ],
                 items: [
                     { title: "Served as one of the two leads for this 3-person team; Provided the vision for the project; Created wireframes." },
                     { title: "Played an active role in defining the different properties for all of our domain classes and how the multiplicity relationships should be represented in our SQL Server." },
@@ -125,6 +244,19 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "May 2020 - Aug 2020",
         image: { name: "iota-preview.png", isSquare: true, hasBorder: true },
         description: "A save-for-later and digital media aggregator app.",
+        techStack: [
+            "Dart", 
+            "Flutter", 
+            "JavaScript", 
+            "React", 
+            "Redux", 
+            "HTML", 
+            "CSS", 
+            "Bulma CSS", 
+            "Firebase/Firestore", 
+            "Python", 
+            "Flask"
+        ],
         responsibilitiesAndWins: [
             { title: "Revised the design of Korey (Team Korey's project from below) and rebranded it" },
             { title: "Used the Newspaper3k python library to develop a basic Flask api that would return the content of articles that were passed to it" },
@@ -136,6 +268,16 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Mar 2018 - Dec 2018 (7 months total; temporarily left the project from Jul to Oct)",
         image: { name: "stealth-startup-dancers-preview.png", isSquare: true },
         description: "An effort to develop a contract-labor app that would help exotic dancers and club owners work together in a efficient and completely legal way.",
+        techStack: [
+            "React Native",
+            "Expo",
+            "iOS",
+            "Android",
+            "ReactJS",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
         responsibilitiesAndWins: [
             { title:  "Initially led the development of the React Native frontend; Moved to a support role when I came back to the project in October." },
             { title: "Spearheaded the design for both the web and mobile versions based on the given specfications." },
@@ -147,6 +289,14 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Jun 2018 - Aug 2018 (occurred while I temporarily left the above project)",
         image: { name: "korey-preview.png", isSquare: false, hasBorder: true },
         description: "A mobile app that allows you to save online articles and other digital content for later and consume them right within the app. For reference, I started this endeavor because I discovered a need while working on a independent user experience case study.",
+        techStack: [
+            "React Native",
+            "Realm",
+            "iOS",
+            "Android",
+            "Flask",
+            "Python"
+        ],
         responsibilitiesAndWins: [
             { title: "Spearheaded the app's design and co-developed the React-Native frontend" },
             { title: "Played an active role in discussions that pertained to the backend" },
@@ -158,8 +308,15 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Apr 2016 - Jun 2016",
         image: { name: "hci-eval-project-preview.png", isSquare: true, hasBorder: true },
         description: "A web-based administration system that would allow doctors and trainers to track the exercise data of their Leukemia patients",
+        techStack: [
+            "Spring", 
+            "MongoDB", 
+            "AngularJS", 
+            "HTML", 
+            "CSS"
+        ],
         responsibilitiesAndWins: [
-            { title: "Participated in architectural discussions that determined what technologies would be used for the backend and front-end", subItems: ["( Backend - Spring / MongoDB | Frontend - HTML / CSS / AngularJS )"] },
+            { title: "Participated in architectural discussions that determined what technologies would be used for the backend and front-end" },
             { title: "Played an active role in backend development discussions and supported backend development efforts that were being spearheaded by another team member:",
               subItems: [
                 "Made the REST controllers make use of the service layer classes, which interacted with the MongoDB database",
@@ -177,7 +334,13 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Jan 2016 - Jun 2016",
         image: { name: "senior-design-dev-preview.png", isSquare: false },
         description: "A proof of concept Android application that would allow users to monitor business operations, like fleet performance.",
-        githubURL: "",
+        techStack: [
+            "Android",
+            "Java",
+            "Spring",
+            "REST",
+            "MPAndroidChart"
+        ],
         responsibilitiesAndWins: [
           {
             title: "Part 1 - Focus: Usability Design & Implementation Design (Winter Quarter)",
@@ -189,7 +352,7 @@ export const devExperienceItems: ExperienceItem[] = [
             ]
           },
           { 
-            title: " Part 2 - Focus: Implementation (Spring Quarter) ",
+            title: " Part 2 - Focus: Implementation (Spring Quarter)",
             items: [
               { title: "Delegated development tasks and directed integration efforts during sprints" },
               { title: "Laid the foundations for the class that made login and coverage data requests to our mocked RESTful backend" },
@@ -207,6 +370,10 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Feb 2016 - Mar 2016",
         image: { name: "board-game-dev-preview.png", isSquare: true },
         description: "An extensible board game server.",
+        techStack: [
+            "Java",
+            "JavaFX",
+        ],
         responsibilitiesAndWins: [
           { title: "Collaborated with 6 students in order to design and build an extensible board game server, which included a networking component and the following built-in games: Chess, Checkers, Tic-Tac-Toe" },
           { title: "Actively participated in architectural discussions that led the game-related classes to ultimately use a Model-View-Controller architecture, in addition to participating in discussions related to how the networking component of the project would interface with the game architecture" },
@@ -221,6 +388,12 @@ export const devExperienceItems: ExperienceItem[] = [
       image: { name: "mixagram-dev-preview.png", isSquare: false },
       duration: "Oct 2014 - Feb 2015",       
       description: "A mobile app for the iPhone that allows users to combine short video clips with music.",
+      techStack: [
+        "Objective-C",
+        "iOS",
+        "PBJVision",
+        "Facebook Pop"
+      ],
       responsibilitiesAndWins: [
         { title: "Laid down the foundations for the recording and preview screens based on the given design specifications" },
         { title: "Analyzed the documentation and code of the outsourced music and video clip mixing engine in order to integrate its functionality into the recording screen"},
@@ -234,6 +407,12 @@ export const devExperienceItems: ExperienceItem[] = [
       duration: "Aug 2011 - Apr 2014",
       image: { name: "ftf-dev-preview.png", isSquare: false },
       description: "A mobile bus schedule that improves the experience of Fresno Area Express bus riders.",
+      techStack: [
+        "Objective-C",
+        "iOS",
+        "Java",
+        "Android"
+      ],
       responsibilitiesAndWins: [
         { title: "Spearheaded the design and the development of the user interface and user experience" },
         { title: "Designed and developed the Favorites feature, which allows users to quickly access their most used routes" },

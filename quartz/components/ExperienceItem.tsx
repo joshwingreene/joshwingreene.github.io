@@ -19,6 +19,7 @@ type Item = {
 type Section = {
     title: string
     items: Item[] 
+    techStack: string[]
 }
 
 type ImageData = {
@@ -35,6 +36,7 @@ export type ExperienceItem = {
     responsibilitiesAndWins: unknown[]
     githubURL?: string
     learnMoreURL?: string // Used to put a link to the right of the description
+    techStack?: string[]
 }
 
 interface Options {
@@ -64,12 +66,14 @@ export default ((userOpts?: Options) => {
                         <h3>{experienceItem.title}</h3>
                         <p class="experience-duration">{experienceItem.duration}</p>
                         <p><span style={{ fontWeight: "bold" }}>Description:</span> {experienceItem.description}</p>
+                        { experienceItem.techStack && <p><span style={{ fontWeight: "bold" }}>Technologies: </span>{experienceItem.techStack.join(', ')}</p> }
                         <ul>
                             {experienceItem.responsibilitiesAndWins.map((item) => {
                                 if (isSection(item)) {
                                     return (
                                         <li>
                                             <h4>{item.title}</h4>
+                                            { item.techStack && <p><span style={{ fontWeight: "bold" }}>Technologies: </span>{item.techStack.join(', ')}</p> }
                                             <ul>
                                                 {item.items.map((i) => {
                                                     return (
