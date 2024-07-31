@@ -178,8 +178,8 @@ export default ((userOpts?: Options) => {
         }
 
         .img-not-squared {
-            width: 200px;
-            max-height: 400px;
+            width: 250px;
+            margin: 0 auto;
         }
 
         .img-with-border {
