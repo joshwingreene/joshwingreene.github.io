@@ -19,7 +19,7 @@ export const devExperienceItems: ExperienceItem[] = [
             "CSS"
         ],
         responsibilitiesAndWins: [
-            { title: "Developed a prototype that allows me to use a subset of the feature set for personal use" },
+            { title: "Developed a prototype that allows me to manage my habits, tasks, checkpoints, projects, key results, and goals" },
             { title: "Utlitized AI tools, like GitHub Copilot, in order to improve my productivity" }
         ]
     },
