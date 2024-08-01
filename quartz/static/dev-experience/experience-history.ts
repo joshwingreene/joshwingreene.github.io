@@ -272,7 +272,7 @@ export const devExperienceItems: ExperienceItem[] = [
     {
         title: "Stealth Startup: The Uber for Exotic Dancers",  
         duration: "Mar 2018 - Dec 2018 (7 months total; temporarily left the project from Jul to Oct)",
-        image: { name: "stealth-startup-dancers-preview.png", isSquare: true },
+        image: { name: "../item-cover/stealth-startup-dancers-preview.png", isSquare: true },
         description: "An effort to develop a contract-labor app that would help exotic dancers and club owners work together in a efficient and completely legal way.",
         techStack: [
             "React Native",
