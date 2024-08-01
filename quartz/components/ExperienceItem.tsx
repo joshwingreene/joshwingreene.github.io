@@ -20,6 +20,8 @@ type Section = {
     title: string
     items: Item[] 
     techStack: string[]
+    productHuntLaunchURL?: string
+    githubURL?: string
 }
 
 type ImageData = {
@@ -37,6 +39,7 @@ export type ExperienceItem = {
     githubURL?: string
     learnMoreURL?: string // Used to put a link to the right of the description
     techStack?: string[]
+    productHuntLaunchURL?: string
 }
 
 interface Options {
@@ -55,6 +58,13 @@ const isLink = (data: unknown): data is Link => {
     return isObject(data) && data.url !== undefined;
 }
 
+const renderPHAndGitHubLinks = (productHuntLaunchURL: string | undefined, githubURL: string | undefined) => {
+    return (productHuntLaunchURL || githubURL) &&
+                <p><span>Links: </span>
+                    { productHuntLaunchURL && <a style={{ marginRight: '.2rem' }} target={"_target"} href={productHuntLaunchURL}>Product Hunt</a> }
+                    { githubURL && <a target={"_target"} href={githubURL}>GitHub</a> }</p>
+}
+
 export default ((userOpts?: Options) => {
     function ExperienceItem({ fileData, cfg, displayClass }: QuartzComponentProps) {
         const { experienceItem } = {  ...userOpts }
@@ -65,15 +75,17 @@ export default ((userOpts?: Options) => {
                     <div class="experience-info">
                         <h3>{experienceItem.title}</h3>
                         <p class="experience-duration">{experienceItem.duration}</p>
-                        <p><span style={{ fontWeight: "bold" }}>Description:</span> {experienceItem.description}</p>
-                        { experienceItem.techStack && <p><span style={{ fontWeight: "bold" }}>Technologies: </span>{experienceItem.techStack.join(', ')}</p> }
+                        <p><span>Description:</span> {experienceItem.description}</p>
+                        { renderPHAndGitHubLinks(experienceItem.productHuntLaunchURL, experienceItem.githubURL) }
+                        { experienceItem.techStack && <p><span>Technologies: </span>{experienceItem.techStack.join(', ')}</p> }
                         <ul>
                             {experienceItem.responsibilitiesAndWins.map((item) => {
                                 if (isSection(item)) {
                                     return (
                                         <li>
                                             <h4>{item.title}</h4>
-                                            { item.techStack && <p><span style={{ fontWeight: "bold" }}>Technologies: </span>{item.techStack.join(', ')}</p> }
+                                            { renderPHAndGitHubLinks(item.productHuntLaunchURL, item.githubURL) }
+                                            { item.techStack && <p><span>Technologies: </span>{item.techStack.join(', ')}</p> }
                                             <ul>
                                                 {item.items.map((i) => {
                                                     return (
@@ -139,6 +151,10 @@ export default ((userOpts?: Options) => {
         flex-direction: row;
         width: 100%;
         margin-top: 1rem;
+
+        span {
+            font-weight: bold;
+        }
 
         .experience-info {
             display: flex;

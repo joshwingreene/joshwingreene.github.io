@@ -31,6 +31,8 @@ export const devExperienceItems: ExperienceItem[] = [
         responsibilitiesAndWins: [
             {  
                 title: "Front Porch (Dec 2023 - Mar 2024)",
+                productHuntLaunchURL: "https://www.producthunt.com/products/front-porch#front-porch",
+                githubURL: "https://github.com/DigitalGardeningCollective/front-porch",
                 techStack: [
                     "JavaScript",
                     "HTML",
@@ -43,6 +45,7 @@ export const devExperienceItems: ExperienceItem[] = [
             },
             {
                 title: "Open-Source Community Digital Gardening Technology (Jun 2023 - Dec 2023)",
+                githubURL: "https://github.com/DigitalGardeningCollective/community-digital-garden",
                 techStack: [
                     "ReactJS",
                     "NextJS",
@@ -113,9 +116,11 @@ export const devExperienceItems: ExperienceItem[] = [
     },
     {
         title: "Make Work Fun",
-        duration: "Jun 2021 - Nov 2022",
+        duration: "Jun 2021 - Oct 2021 (and a couple of commits in Nov 2022)",
         image: { name: "make-work-fun-dailies-preview.png", isSquare: true },
         description: "Gamify your productivity tools and unlock multiplayer for personal development.",
+        productHuntLaunchURL: "https://www.producthunt.com/products/make-work-fun-gamify-notion-workspaces#make-work-fun-gamify-notion-workspaces",
+        githubURL: "https://github.com/thex3family/make-work-fun",
         techStack: [
             "ReactJS", 
             "NextJS",
@@ -210,6 +215,7 @@ export const devExperienceItems: ExperienceItem[] = [
             },
             {
                 title: "Project 2 - Revature Dev Tribune (Jan 2021 - Feb 2021)",
+                githubURL: "https://github.com/Revature-Dev-News/Revature-Dev-Tribune",
                 techStack: [
                     "C#", 
                     "ASP.NET Web API", 
@@ -327,7 +333,6 @@ export const devExperienceItems: ExperienceItem[] = [
             { title: "Developed a python script that was used to remotely update the Spring-based server on the client's physical server, which I previously set up" },
             { title: "Wrote documentation that described our architecture and why specific technologies were chosen" }
         ],
-        githubURL: ""
     },
     {
         title: "Senior Design Project - Thales Group Proof-of-Concept Android App",
@@ -370,6 +375,7 @@ export const devExperienceItems: ExperienceItem[] = [
         duration: "Feb 2016 - Mar 2016",
         image: { name: "board-game-dev-preview.png", isSquare: true },
         description: "An extensible board game server.",
+        githubURL: "https://github.com/blinebau/inf122-game-server",
         techStack: [
             "Java",
             "JavaFX",
