@@ -152,14 +152,14 @@ export default ((userOpts?: Options) => {
         width: 100%;
         margin-top: 1rem;
 
-        span {
-            font-weight: bold;
-        }
-
         .experience-info {
             display: flex;
             flex: 3;
             margin-right: 1rem;
+
+            span {
+                font-weight: bold;
+            }
         }
 
         h3, h4, p, ul {
