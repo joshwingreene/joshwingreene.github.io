@@ -40,6 +40,7 @@ export type ExperienceItem = {
     learnMoreURL?: string // Used to put a link to the right of the description
     techStack?: string[]
     productHuntLaunchURL?: string
+    roles?: string[]
 }
 
 interface Options {
@@ -74,6 +75,7 @@ export default ((userOpts?: Options) => {
                 <div class="experience-item responsive"> 
                     <div class="experience-info">
                         <h3>{experienceItem.title}</h3>
+                        { experienceItem.roles && <h4>{experienceItem.roles.join(', ')}</h4> }
                         <p class="experience-duration">{experienceItem.duration}</p>
                         <p><span>Description:</span> {experienceItem.description}</p>
                         { renderPHAndGitHubLinks(experienceItem.productHuntLaunchURL, experienceItem.githubURL) }
