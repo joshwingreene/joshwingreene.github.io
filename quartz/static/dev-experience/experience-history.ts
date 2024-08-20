@@ -61,7 +61,7 @@ export const devExperienceItems: ExperienceItem[] = [
                     "CSS"
                 ],
                 items: [
-                    { title: "Led a team of 6 open-source developers in creating a community blogging web app that would be integrated with a digital gardening hub" },
+                    { title: "Led a team of 5 open-source developers in creating a community blogging web app that would be integrated with a digital gardening hub" },
                     { title: "Created the frontend boilerplate that would be used as the starting point for the team" }
                 ]
             },
