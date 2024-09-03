@@ -2,31 +2,8 @@ import { ExperienceItem } from "../../components/ExperienceItem";
 
 export const devExperienceItems: ExperienceItem[] = [
     {
-        title: "(Productivity) Stealth Startup",
-        roles: ["Founder", "Lead Developer"],
-        duration: "Apr 2024 - Present",
-        image: { name: "productivity-nda-graphic.png", isSquare: true },
-        description: "A productivity app that helps people get things done.",
-        techStack: [
-            "ReactJS", 
-            "NextJS", 
-            "TypeScript", 
-            "JavaScript", 
-            "PostgreSQL", 
-            "Supabase", 
-            "Storybook",
-            "Chakra UI",
-            "HTML",
-            "CSS"
-        ],
-        responsibilitiesAndWins: [
-            { title: "Developed a prototype that allows me to manage my habits, tasks, checkpoints, projects, key results, and goals" },
-            { title: "Utlitized AI tools, like GitHub Copilot, in order to improve my productivity" }
-        ]
-    },
-    {
-        title: "The Digital Gardening Collective",
-        roles: ["Founder", "Lead Developer"],
+        title: "The Digital Gardening Collective ",
+        roles: ["(Hobby) Founder", "Lead Developer"],
         duration: "Sep 2022 - Present",
         image: { name: "../landing-showcase/dgc-showcase-image.png", isSquare: true },
         description: "The DGC is a living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own. The DGC also maintains open-source technologies in the personal digital gardening arena.",
