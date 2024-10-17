@@ -3,8 +3,8 @@ import { ExperienceItem } from "../../components/ExperienceItem";
 export const devExperienceItems: ExperienceItem[] = [
     {
         title: "The Digital Gardening Collective ",
-        roles: ["(Hobby) Founder", "Lead Developer"],
-        duration: "Sep 2022 - Present",
+        roles: ["Creator", "Lead Developer"],
+        duration: "Sep 2022 - Mar 2024 (Open-Source Initiative)",
         image: { name: "../landing-showcase/dgc-showcase-image.png", isSquare: true },
         description: "The DGC is a living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own. The DGC also maintains open-source technologies in the personal digital gardening arena.",
         responsibilitiesAndWins: [
