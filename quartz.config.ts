@@ -24,13 +24,19 @@ const config: QuartzConfig = {
         title: "Welcome!",
         firstLeadUp: "The name's",
         secondLeadUp: "and I'm a",
-        whatIDo: ["Software Developer", "Open-Source Developer", "Digital Gardener"],
+        whatIDo: ["Technical Writer", "Software Developer", "Designer", "Digital Gardener"],
       },
       showcaseItems: [
         {
           image: "developer-showcase-image.jpg",
+          title: "Technical Writing Experience",
+          description: "** Placeholder **",
+          pathnameOrUrl: "portfolio/technical-writing",
+        },
+        {
+          image: "developer-showcase-image.jpg",
           title: "Software Development Experience",
-          description: "I have developed both mobile and web apps",
+          description: "I have developed mobile apps, web apps, and websites.",
           pathnameOrUrl: "portfolio/dev",
         },
         {
@@ -38,13 +44,6 @@ const config: QuartzConfig = {
           title: "UX, UI, and Misc. Design Experience",
           description: "I have designed mobile apps, web apps, websites, miscellanous design assets.",
           pathnameOrUrl: "portfolio/design",
-        },
-        {
-          image: "dgc-showcase-image.png",
-          title: "The Digital Gardening Collective",
-          description: "A living directory of personal digital gardens and digital gardeners who are willing to trade their time to help others create their own.",
-          pathnameOrUrl: "https://www.digitalgardeningcollective.com",
-          hasExternalLink: true,
         }
       ],
     },
