@@ -10,6 +10,7 @@ import { i18n } from "../../i18n"
 import * as Component from "../../components"
 import { ExperienceItem } from "../ExperienceItem"
 import { devExperienceItems } from "../../static/dev-experience/experience-history"
+import { technicalWritingExperienceItems } from "../../static/technical-writing-experience/technical-writing-history"
 
 interface FolderContentOptions {
   /**
@@ -44,29 +45,41 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     }
 
     return (
-      folderSlug === "portfolio/dev" ?
-        <div id="dev-experience-body">
-          { devExperienceItems.map((item) => {
-              const ExperienceComponent = Component.ExperienceItem({ experienceItem: item })
-              return <ExperienceComponent { ...props }  />
-              })
-          }
-        </div>
-          :
-        <div class={classes}>
-          <div class="page-listing">
-            {options.showFolderCount && (
-              <p>
-                {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
-                  count: allPagesInFolder.length,
-                })}
-              </p>
-            )}
-            <div>
-              <PageList {...listProps} />
+        {
+          "portfolio/technical-writing": (
+            <div style="margin-top: 2rem;display: grid;grid-template-columns: repeat(2, 1fr);grid-template-rows: repeat(2);gap: 36px;">
+              { technicalWritingExperienceItems.map((item) => {
+                  const ExperienceComponent = Component.ExperienceCard({ experienceItem: item })
+                  return <ExperienceComponent { ...props }  />
+                  })
+              }
             </div>
-          </div>
+          ),
+          "portfolio/dev": (
+            <div id="dev-experience-body">
+              { devExperienceItems.map((item) => {
+                  const ExperienceComponent = Component.ExperienceItem({ experienceItem: item })
+                  return <ExperienceComponent { ...props }  />
+                  })
+              }
+            </div>
+          )
+        } [folderSlug] || (
+          <div class={classes}>
+            <div class="page-listing">
+              {options.showFolderCount && (
+                <p>
+                  {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
+                    count: allPagesInFolder.length,
+                  })}
+                </p>
+              )}
+              <div>
+                <PageList {...listProps} />
+              </div>
+            </div>
         </div>
+      )
     )
   }
 

@@ -31,6 +31,7 @@ import AuthorImageConstructor from "../../components/AuthorImage"
 import ReadingTimeConstructor from "../../components/ReadingTime"
 import CoverImageConstructor from "../../components/CoverImage"
 import TagListConstructor from "../../components/TagList"
+import ExperienceCardConstructor from "../../components/ExperienceCard"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { Argv } from "../../util/ctx"
@@ -119,13 +120,14 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
   const CoverImage = CoverImageConstructor()
   const TagList = TagListConstructor()
   const ExperienceItem = ExperienceItemConstructor()
+  const ExperienceCard = ExperienceCardConstructor()
 
   return {
     name: "ContentPage",
     getQuartzComponents() {
       return [
           Head, Header, Body, ...header, ...beforeBody, pageBody, ...left, ...right, Footer, 
-          Landing, ShowcaseItem, ExperienceItem,
+          Landing, ShowcaseItem, ExperienceItem, ExperienceCard,
           Garden, Card, RecentlyPublished,
           GrowthStage, Row, AuthorImageWithName, Dates, Contributions, ReadingTime,
           Team, ToolsOrTech, Role, Duration, Grid, Divider,

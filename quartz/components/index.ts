@@ -42,6 +42,7 @@ import AuthorImage from "./AuthorImage"
 import ReadingTime from "./ReadingTime"
 import CoverImage from "./CoverImage"
 import ExperienceItem from "./ExperienceItem"
+import ExperienceCard from "./ExperienceCard"
 
 export {
   Title,
@@ -87,5 +88,6 @@ export {
   AuthorImage,
   ReadingTime,
   CoverImage,
-  ExperienceItem
+  ExperienceItem,
+  ExperienceCard
 }
