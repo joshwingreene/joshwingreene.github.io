@@ -4,16 +4,11 @@ import path from "path"
 import style from "../styles/listPage.scss"
 import { PageList } from "../PageList"
 import { stripSlashes, simplifySlug } from "../../util/path"
-import { Root } from "hast"
-import { htmlToJsx } from "../../util/jsx"
 import { i18n } from "../../i18n"
 import * as Component from "../../components"
-import { ExperienceItem } from "../ExperienceItem"
 import { devExperienceItems } from "../../static/dev-experience/experience-history"
 import { technicalWritingExperienceItems } from "../../static/technical-writing-experience/technical-writing-history"
 import { DesignSection } from "../DesignSection"
-import afterDOMLoaded from "../DesignSection"
-
 
 interface FolderContentOptions {
   /**
