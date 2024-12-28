@@ -1,9 +1,7 @@
-import { FullSlug, resolveRelative } from "../util/path"
+import { resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
-import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
-import { classNames } from "../util/lang"
 
 export function byDate(
   cfg: GlobalConfiguration,
@@ -45,7 +43,7 @@ export const DesignSection: QuartzComponent = ({ cfg, fileData, allFiles, limit 
                             src={`../../static/item-cover/${hoverImage}`} 
                             alt={`${coverImageAltText && typeof coverImageAltText === "string" ? 
                                 coverImageAltText : 
-                                "Photo"
+                                `Photo of ${title}`
                             }`} 
                         />
                     </a>
