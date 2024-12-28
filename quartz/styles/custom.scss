@@ -30,6 +30,13 @@
     @media only screen and (max-width: 767) {
         flex-direction: column;
 
+        .technical-writing-container, .design-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4);
+            gap: 36px;
+        }
+
         .author-img {
             margin: 0;
         }
@@ -111,6 +118,13 @@
     }
     @media only screen and (min-width: 768) {
         flex-direction: row;
+
+        .technical-writing-container, .design-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2);
+            gap: 36px;
+        }
 
         #garden-info {
             margin-left: 15px;

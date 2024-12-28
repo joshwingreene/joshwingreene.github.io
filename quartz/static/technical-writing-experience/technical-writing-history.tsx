@@ -57,7 +57,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         learnMoreURL: "https://www.behance.net/gallery/100000001/Project-Untaboo",
         selectedDeliverables: [
             {
-                title: "Style Guide",
+                title: "UI Style Guide",
                 url: "https://www.beh"
             },
             {

@@ -1,12 +1,5 @@
 @use "../../styles/variables.scss" as *;
 
-.technical-writing-exp-container { // Temporarily added this inline for now
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2);
-  gap: 36px;
-}
-
 ul.section-ul {
   list-style: none;
   margin-top: 2em;

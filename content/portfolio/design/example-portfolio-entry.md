@@ -16,6 +16,7 @@ role:
   - Usability Testing
   - Presentations
 cover-image: example-essay-image.jpg
+hover-image: example-essay-image.jpg
 ---
 ## Overview
 

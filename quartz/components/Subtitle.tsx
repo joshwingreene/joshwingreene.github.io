@@ -26,7 +26,7 @@ export default ((opts?: Options) => {
   
   Subtitle.css = `
   .subtitle {
-    margin: .5rem 0 0 0;
+    margin: .5rem 0 .5rem 0;
     color: var(--darkgray);
   }
   `

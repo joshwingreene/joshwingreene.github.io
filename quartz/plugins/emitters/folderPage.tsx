@@ -36,7 +36,9 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
   return {
     name: "FolderPage",
     getQuartzComponents() {
-      return [Head, Header, Body, ...header, ...beforeBody, pageBody, ...left, ...right, Footer]
+      return [
+        Head, Header, Body, ...header, ...beforeBody, pageBody, ...left, ...right, Footer,
+      ]
     },
     async getDependencyGraph(_ctx, content, _resources) {
       // Example graph:

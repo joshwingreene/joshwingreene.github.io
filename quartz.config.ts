@@ -42,7 +42,7 @@ const config: QuartzConfig = {
         {
           image: "designer-showcase-image.jpg",
           title: "UX, UI, and Misc. Design Experience",
-          description: "I have designed mobile apps, web apps, websites, miscellanous design assets.",
+          description: "I have designed mobile apps, web apps, websites, and miscellanous design assets.",
           pathnameOrUrl: "portfolio/design",
         }
       ],
