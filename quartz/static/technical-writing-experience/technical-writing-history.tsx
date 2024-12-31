@@ -27,11 +27,11 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
             },
             {
                 title: "Sample Frontend Pull Request",
-                url: ""
+                url: "https://github.com/Shift3/boilerplate-client-react/pull/564"
             },
             {
                 title: "Sample Backend Pull Request",
-                url: ""
+                url: "https://github.com/Shift3/dj-starter/pull/43"
             }
         ]
     },
@@ -57,12 +57,16 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         learnMoreURL: "https://www.behance.net/gallery/100000001/Project-Untaboo",
         selectedDeliverables: [
             {
-                title: "UI Style Guide",
-                url: "https://www.beh"
+                title: "Research Plan",
+                url: "https://drive.google.com/file/d/1SmIpiaHStDnzoJRHxPb6moEsm14klQJ4/view?usp=sharing"
+            },
+            {
+                title: "Domain Research",
+                url: "https://drive.google.com/file/d/1fvmIYIlcc-K3DXCDJC0m4uYC2Q6GeIer/view?usp=sharing"
             },
             {
                 title: "Annotated Wireframes",
-                url: "https://www.beh"
+                url: "https://drive.google.com/file/d/1cETWqk_KSVUNiAIio6mKv2hnUSUJGsCB/view?usp=sharing"
             }
         ]
     },
@@ -71,17 +75,17 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         description: "I entered a hackathon with two programming friends of mine with a product that was based on the results of my Pocket UX Case Study. We came in second place.",
         duration: "Jun 2018 - Aug 2018",
         selectedDeliverables: [
-            {
-                title: "Flier",
-                url: "https://www.beh"
-            },
+            // {
+            //     title: "Flier",
+            //     url: "https://www.beh"
+            // },
             {
                 title: "Judge Pitch",
-                url: "https://www.beh"
+                url: "https://docs.google.com/presentation/d/1mkmFFonySayAtc_KrF2_mFjtq0moB9iq-hmgEv1ChA8/edit?usp=sharing"
             },
             {
                 title: "Main Stage Pitch",
-                url: "https://www.beh"
+                url: "https://docs.google.com/presentation/d/17j35_430EpwNBb3L4avzjub4hP0IWRNLfjnSej_autM/edit?usp=sharing"
             },
         ]
     },
@@ -93,11 +97,11 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         selectedDeliverables: [
             {
                 title: "Process Overview",
-                url: "https://www.beh"
+                url: "https://drive.google.com/file/d/1d_qQD3W698b06spsAuY3aHR1FcJytFms/view?usp=sharing"
             },
             {
                 title: "Story Maps",
-                url: "https://www.beh"
+                url: "https://drive.google.com/file/d/1A2X4tok89sweyAiMjsBIv-5m-uxcc8kx/view?usp=sharing"
             },
         ]
     },

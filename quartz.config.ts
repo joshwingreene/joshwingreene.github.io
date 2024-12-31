@@ -28,7 +28,7 @@ const config: QuartzConfig = {
       },
       showcaseItems: [
         {
-          image: "developer-showcase-image.jpg",
+          image: "technical-writing-showcase-image.jpg",
           title: "Technical Writing Experience",
           description: "** Placeholder **",
           pathnameOrUrl: "portfolio/technical-writing",
