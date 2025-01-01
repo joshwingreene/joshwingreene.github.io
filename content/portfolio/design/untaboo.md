@@ -88,7 +88,7 @@ Using the brief and the results of the kickoff meeting as a guide, we identified
 
 In total, we interviewed **one Subject Matter Expert (SME) and 8 users over the course of four days.** For reference, every participant was selected by our client. This fact is important because the client identified a 20-something year old female student on a gap year as being the first type of user that came to mind in an Empathy Map activity that we conducted at the end of our kickoff meeting. **However, the median age for the user interviews was 30.** So, there was a disconnect here on who she was primarily targeting.
 
-![[../../images/untaboo/first-update.png]]
+![[../../images/untaboo/first-update.jpg]]
 
 After conducting these interviews, we used affinity diagramming in order to identify the major themes from the insights that we gathered. Using the results of this activity and specific data points from our user research, we were able to distill and present a number of participant characteristics and takeaways to our client.
 
@@ -414,7 +414,11 @@ The is the crux of the app. So, we wanted to test whether the flow made sense to
 
 **Relevant Images (Hover Over)**
 
-[Image 1]() [Image 2]() [Image 3]()
+- [Requesting Help - Step 1](../../images/untaboo/request-1.png)
+
+- [The location where users will be able to find requests for help](../../images/untaboo/notification-1.png)
+
+- [Responding to a Request - Step 1](../../images/untaboo/responder-1.png)
 
 **Rationale**
 
@@ -422,9 +426,59 @@ Besides testing the flow, we wanted to test whether people were able to understa
 
 **Relevant Images (Hover Over)**
 
-[Image 1]()
+[Select a responder - The circled numbers represent the approximate location of the listed individual.](../../images/untaboo/seattle-results-list.png)
 
+#### International Version - Choosing where to meet
+
+**Rationale**
+
+We mainly wanted to see whether the presented information about a location would allow the user to gauge how safe the location was to meet with a stranger in foreign location.
+
+**Relevant Image (Hover Over)**
+
+- [Select Meeting Location - Step 1](../../images/untaboo/international-choose-meeting-loc-1.png)
+- [Select Meeting Location - Step 2](../../images/untaboo/international-choose-meeting-loc-2.png) 
+
+#### Auto-Translation Messaging Feature & Rating Screen
+
+**Rationale**
+
+We wanted to see if this feature and the rating screen made sense to the user.
+
+**Relevant Images (Hover Over)**
+
+- [Step 1](../../images/untaboo/international-meeting-details-set.png)
+- [Step 2](../../images/untaboo/messaging-1.png)
+- [Step 3](../../images/untaboo/messaging-2.png)
+- [Step 4](../../images/untaboo/rating-screen.png)
+
+Besides testing these items, we also had pre and post-test questions. Here’s a quick glimpse: 
+
+**Pre-Test Questions:** Asked for the participant's age, how often they traveled internationally, current occupation, and etc
+
+**Post-Test Questions:** Asked for their favorite / least favorite part about the prototype, what would they change, and etc
+
+During each of the four usability testing sessions, we would switch up who was the interviewer and notetaker. Dorothy was the interviewer for the first two whereas I was the interviewer for the remaining three (includes the rating screen). We made small additions to what we tested as we went along.
 
 ### Findings & Recommendations
 
+Here's a quick video of our findings and recommendations for the project moving forward:
+
+![[../../vid/untaboo/untaboo-findings-and-recommendations.mp4]]
+
 ### Final Hand-off Meeting
+
+For our final meeting, the client invited us to one last meeting where she and her team would be in attendance, which included the developers that she recently brought onto the project.
+
+During this meeting, we did the following:
+
+1) Gave an overview of what we did during the project in order to help get the developers up-to-speed
+
+2) Covered our findings and recommendations from the usability testing sessions
+
+3) Answered any remaining questions that people had about the work that Dorothy and I did
+
+![[../../images/untaboo/final-presentation.jpg]]
+
+![[../../images/untaboo/final-group-picture.jpg]]
+
