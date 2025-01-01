@@ -54,7 +54,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         title: "Project Untaboo",
         description: "I collaborated in a two-person UX Design team to deliver a user-centered design solution for a period care product.",
         duration: "Nov 2019 - Dec 2019",
-        learnMoreURL: "https://www.behance.net/gallery/100000001/Project-Untaboo",
+        learnMoreURL: "../../portfolio/design/untaboo",
         selectedDeliverables: [
             {
                 title: "Research Plan",
@@ -74,6 +74,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         title: "Korey - Hackathon Entry",
         description: "I entered a hackathon with two programming friends of mine with a product that was based on the results of my Pocket UX Case Study. We came in second place.",
         duration: "Jun 2018 - Aug 2018",
+        learnMoreURL: "../../portfolio/design/pocket-ux-case-study#59daysofcode-2018",
         selectedDeliverables: [
             // {
             //     title: "Flier",
@@ -93,7 +94,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         title: "Pocket UX Case Study",
         description: "An independent UX Case Study focused on product strategy, exploring improvements for the read-it-later app Pocket and general solutions for the save-for-later problem.",
         duration: "Oct 2017 - Apr 2018",
-        learnMoreURL: "https://www.behance.net/gallery/100000001/Pocket-UX-Case-Study",
+        learnMoreURL: "../../portfolio/design/pocket-ux-case-study",
         selectedDeliverables: [
             {
                 title: "Process Overview",
