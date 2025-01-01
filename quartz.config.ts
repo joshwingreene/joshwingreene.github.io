@@ -30,7 +30,7 @@ const config: QuartzConfig = {
         {
           image: "technical-writing-showcase-image.jpg",
           title: "Technical Writing Experience",
-          description: "** Placeholder **",
+          description: "I have created documentation for development processes, marketing copy for a product launch, set up instructions for an open-source project, and etc.",
           pathnameOrUrl: "portfolio/technical-writing",
         },
         {
