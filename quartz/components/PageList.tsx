@@ -3,6 +3,8 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
+import { i18n } from "../i18n"
+import { prepareExternalOrLocalLink } from "../util/link"
 
 export function byDateAndAlphabetical(
   cfg: GlobalConfiguration,
@@ -38,7 +40,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Pr
   return (
     <ul class="section-ul">
       {list.map((page) => {
-        const title = page.frontmatter?.title
+        const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
         const tags = page.frontmatter?.tags ?? []
 
         return (
@@ -51,9 +53,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Pr
               )}
               <div class="desc">
                 <h3>
-                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                    {title}
-                  </a>
+                  { prepareExternalOrLocalLink(title, fileData, page) }
                 </h3>
               </div>
               <ul class="tags">
