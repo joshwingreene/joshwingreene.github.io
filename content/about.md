@@ -1,8 +1,16 @@
 ---
 title: About Me
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Welcome!
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+The name's Joshwin and I'm a Design-minded Full-Stack Developer. I got my start in tech when I started to co-develop and spearhead the design of [ScholarDev App](https://scholardevapps.com)'s mobile bus schedule, which was called [Fresno Transit Free](https://joshwingreene.com/portfolio/design/fresno-transit-free). That application was launched in 2014, garnered over 15,000 downloads on Google Play, and had a 4/5 star rating as of 2016. While designing and developing this app, I cultivated a strong passion for the creation of great user experiences and design in general.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+Here’s a picture of my team and I when we tied for People’s Choice in a local hackathon called 59DaysofCode in 2013:
+
+![[/images/about/59DOC_award.JPG]]
+
+After gaining approximately five years of formal experience as a software developer, I'm now transitioning to Technical Writing. Why am I switching? To put it simply, I'm not a fan of the LeetCode-centric interview style of software engineering interviews, and I feel like the field is oversaturated. So, based on my technical and user experience design background, my curiosity for tech, and my interest in writing, I believe that technical writing is a good fit for me.
+
+Here's my answer to a recent question about what I enjoy about technical communication and writing:
+
+> "My father makes it a point to frequently publish essays in the newspapers in my hometown. Because of this, I think his hobby rubbed off of me and got me interested in using the written word to spread my ideas with the world. As for technical communication, I like how I can combine my interest in writing with my technical know-how. I'm also a note-taking and personal knowledge management enthusiast. So, technical communication is right up my alley."
