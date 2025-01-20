@@ -9,7 +9,7 @@ Here’s a picture of my team and I when we tied for People’s Choice in a loca
 
 ![[/images/about/59DOC_award.JPG]]
 
-After gaining approximately five years of formal experience as a software developer, I'm now transitioning to Technical Writing. Why am I switching? To put it simply, I'm not a fan of the LeetCode-centric interview style of software engineering interviews, and I feel like the field is oversaturated. So, based on my technical and user experience design background, my curiosity for tech, and my interest in writing, I believe that technical writing is a good fit for me.
+After gaining approximately five years of formal experience as a software developer, I'm now transitioning to Technical Writing. Why am I switching? To put it simply, I'm not a fan of the LeetCode-centric interview style of software engineering interviews, and I feel like the field is oversaturated. So, based on my [technical](https://joshwingreene.com/portfolio/dev/) and [user experience design](https://joshwingreene.com/portfolio/design/) backgrounds, my curiosity for tech, and my interest in writing, I believe that technical writing is a good fit for me.
 
 Here's my answer to a recent question about what I enjoy about technical communication and writing:
 
