@@ -270,7 +270,7 @@ Here is what we put together after getting feedback from each other:
 
 **Task Flow**
 
-![[../../images/untaboo/intl-request-task-flow.png]]
+*Choose period product* --> *See search process (distance slowly increases)* --> *See nearby app users who could help* --> *Select one or more users* --> *Select a meeting location from a list of recommended locations (as a suggestion)* --> *Select a time frame (as a suggestion)* --> *Send request*
 
 #### International Translation Capability (Joshwin)
 
@@ -280,7 +280,7 @@ Here is what we put together after getting feedback from each other:
 
 **Task Flow**
 
-![[../../images/untaboo/intl-translation-task-flow.png]]
+*Tap on Messaging CTA* --> *See message dialog box* --> *See auto-translation options ("Hello. I appreciate the help.", "Where are you?", "Where can I buy period products here?", "Thank you")*
 
 **Note:** I came up with this idea based on how I played an online game in the past that offered auto-translation capabilities. it allowed me to be able to communicate with Japanese players.
 
@@ -292,7 +292,7 @@ Here is what we put together after getting feedback from each other:
 - As a user who needs a period product in a foreign country, I want a way to ensure that I'm meeting with people who I can trust so that I can have a peace of mind when I'm making the exchange.
 - As a user who needs a period product in a foreign country, I want a way to meet with those close to me so that I don't have to go out of my way in order to get the period product that I need.
 
-**Task Flow**
+**Task Flow (Tip - Zoom In)**
 
 ![[../../images/untaboo/meeting-location-flow-1.png]]
 
@@ -311,7 +311,7 @@ Here is what we put together after getting feedback from each other:
 - As a member of the Untaboo community I want to know how urgently the requester needs the product so I can determine whether I'm able to help her in a time frame that will work for her.
 - As a member of the Untaboo community I want to know the requester can be trusted so I can stay safe while trying to help someone.
 
-**Task Flow**
+**Task Flow (Tip - Zoom In)**
 
 ![[../../images/untaboo/domestic-request-task-flow.png]]
 
@@ -324,7 +324,7 @@ Here is what we put together after getting feedback from each other:
 - As a user who needs a period product I want to know where I have to go to get the product so I can decide whether this option will work for me and make any necessary arrangements in my schedule.
 - As a user who will be meeting a stranger to get the product I need, I want to know I can trust the person helping so I can stay safe while getting the help I need.
 
-**Task Flow**
+**Task Flow (Tip - Zoom In)**
 
 ![[../../images/untaboo/request-received-task-flow.png]]
 
