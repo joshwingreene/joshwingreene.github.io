@@ -4,7 +4,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
     {
         title: "Technical Writer HQ's Capstone Project",
         description: "This project encompasses seven technical writing documents. The listed items are my planned deliverables. Potential employers, feel free to request expedited creation of any of the listed documents.",
-        duration: "Dec 2025 - Present",
+        duration: "Dec 2024 - Present",
         selectedDeliverables: [
             {
                 title: "Docusaurus-based User Guide for Front Porch",
@@ -26,7 +26,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
     {
         title: "Front Porch",
         description: "I created an open-source fork of Quartz that serves as a person's website, digital garden, portfolio, 'now' log, and blogroll.",
-        duration: "Dec 2023 - Mar 2024 & Jan 2025 - Present",
+        duration: "Dec 2023 - Mar 2024",
         selectedDeliverables: [
             {
                 title: "Set up Instructions",
