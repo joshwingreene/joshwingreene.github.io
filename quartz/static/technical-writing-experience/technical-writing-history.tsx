@@ -79,7 +79,7 @@ export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
         learnMoreURL: "../../portfolio/design/untaboo",
         selectedDeliverables: [
             {
-                title: "6 User Stories",
+                title: "6 User Stories (you may need to click twice)",
                 url: "https://joshwingreene.com/portfolio/design/untaboo#user-stories--task-flows"
             },
             {
