@@ -4,7 +4,8 @@ import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
-import { prepareExternalOrLocalLink } from "../util/link"
+import { showExternalOrLocalLink } from "../util/link"
+import { showExternalHost } from "../util/externalHost"
 
 export function byDateAndAlphabetical(
   cfg: GlobalConfiguration,
@@ -53,8 +54,9 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Pr
               )}
               <div class="desc">
                 <h3>
-                  { prepareExternalOrLocalLink(title, fileData, page) }
+                  { showExternalOrLocalLink(title, fileData, page) }
                 </h3>
+                { showExternalHost(page) }
               </div>
               <ul class="tags">
                 {tags.map((tag) => (

@@ -8,7 +8,8 @@ import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import { Data } from "vfile"
-import { prepareExternalOrLocalLink } from "../util/link"
+import { showExternalOrLocalLink } from "../util/link"
+import { showExternalHost } from "../util/externalHost"
 
 interface Options {
   title?: string
@@ -48,17 +49,13 @@ export default ((userOpts?: Partial<Options>) => {
                 <div class="section">
                   <div class="desc">
                     <h3>
-                      { prepareExternalOrLocalLink(title, fileData, page) }
+                      { showExternalOrLocalLink(title, fileData, page) }
                     </h3>
                   </div>
                   {page.dates && (
                     <div class="meta" style={{ display: 'flex', flexDirection: 'row' }}>
                       <Date date={page.dates.published!} locale={cfg.locale} />
-                      { page.frontmatter?.['external-host'] ? 
-                          <p class='external-host'>{ page.frontmatter?.['external-host'] }</p>
-                          : 
-                          null 
-                      }
+                      { showExternalHost(page) }
                     </div>
                   )}
                   <ul class="tags">
