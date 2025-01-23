@@ -52,9 +52,14 @@ export default ((userOpts?: Partial<Options>) => {
                     </h3>
                   </div>
                   {page.dates && (
-                    <p class="meta">
+                    <div class="meta" style={{ display: 'flex', flexDirection: 'row' }}>
                       <Date date={page.dates.published!} locale={cfg.locale} />
-                    </p>
+                      { page.frontmatter?.['external-host'] ? 
+                          <p class='external-host'>{ page.frontmatter?.['external-host'] }</p>
+                          : 
+                          null 
+                      }
+                    </div>
                   )}
                   <ul class="tags">
                     {tags.map((tag) => (
