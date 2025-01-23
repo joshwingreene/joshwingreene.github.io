@@ -7,7 +7,7 @@ export const isObject = (value: unknown): value is Record<string, unknown> => {
 
 type Link = {
     title: string
-    url: string
+    url?: string
     prefixText?: string
 }
 
@@ -36,9 +36,15 @@ export default ((userOpts?: Options) => {
                     {
                         experienceItem.selectedDeliverables ? 
                             <ul style="margin: 0;list-style-type: none;padding-inline-start: 0;">
-                                { experienceItem.selectedDeliverables.map((deliverable) => {
+                                { experienceItem.selectedDeliverables.map((deliverable, index) => {
                                     return (
-                                        <li><a href={deliverable.url} target="_target">{ deliverable.title }</a></li>
+                                        <li>
+                                            { deliverable.url ?  
+                                                <a href={deliverable.url} target="_target">{ deliverable.title }</a>    
+                                                :
+                                                `${index + 1} - ${deliverable.title}`
+                                            }
+                                        </li>
                                     )
                                 })}
                             </ul> 

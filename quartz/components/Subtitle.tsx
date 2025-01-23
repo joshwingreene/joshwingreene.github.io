@@ -18,7 +18,7 @@ export default ((opts?: Options) => {
     }
     
     if (subtitle) {
-      return <h3 class={classNames(displayClass, "subtitle")}>{subtitle}</h3>
+      return <p class={classNames(displayClass, "subtitle")}>{subtitle}</p>
     } else {
       return null
     }
@@ -28,6 +28,7 @@ export default ((opts?: Options) => {
   .subtitle {
     margin: .5rem 0 .5rem 0;
     color: var(--darkgray);
+    font-weight: bold;
   }
   `
 
