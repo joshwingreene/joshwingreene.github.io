@@ -90,6 +90,7 @@ declare module "vfile" {
         description: string
         publish: boolean
         draft: boolean
+        noRSS: boolean
         enableToc: string
         cssclasses: string[]
       }>
