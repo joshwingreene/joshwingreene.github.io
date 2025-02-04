@@ -325,6 +325,7 @@ export const devExperienceItems: ExperienceItem[] = [
         roles: ["Lead Software Developer"],
         duration: "Jan 2016 - Jun 2016",
         image: { name: "senior-design-dev-preview.png", isSquare: false },
+        imageDimensions: { height: 400, width: 200 },
         description: "A proof of concept Android application that would allow users to monitor business operations, like fleet performance.",
         techStack: [
             "Android",

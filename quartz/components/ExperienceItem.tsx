@@ -32,6 +32,7 @@ type ImageData = {
 
 export type ExperienceItem = {
     image: ImageData
+    imageDimensions?: { height: number, width: number }
     title: string
     description: string
     duration: string
@@ -136,7 +137,8 @@ export default ((userOpts?: Options) => {
                     <image 
                         class={`experience-img ${experienceItem.image.isSquare ? 'img-squared' : 'img-not-squared'}
                                 ${experienceItem.image.hasBorder ? 'img-with-border' : ''}
-                            `} 
+                            `}
+                        style={experienceItem.imageDimensions}
                         src={`../../static/dev-experience/${experienceItem.image.name}`} 
                         alt={`${experienceItem.title} Preview Image`} 
                     />
