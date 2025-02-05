@@ -13,6 +13,43 @@ import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx } from "../util/ctx"
+import rehypeComponents, { ComponentContext } from "rehype-components";
+import type { Properties, Root, ElementContent, Element } from "hast";
+import { h } from "hastscript";
+import remarkDirective from "remark-directive";
+import remarkDirectiveRehype from "remark-directive-rehype";
+
+const DocumentationPage = (props: Properties, children: ElementContent[], context: ComponentContext) =>
+  h("article.documentation", [
+    h("h1", String(props.title || "Default title")),
+     ...children
+  ]);
+
+  const CopyrightNotice = (props: Properties, children: ElementContent[], context: ComponentContext) =>
+  h("footer.notice", `© ${props.year}`);
+
+const InfoBox = (props: Properties, children: ElementContent[], context: ComponentContext) =>
+  h(
+    ".infobox", [
+      h(".infobox-title", String(props.title || "Info")),
+      h(".infobox-body", ...children),
+    ]
+  );
+
+  const ImageGrid = (_props: Properties, children: ElementContent[], _context: ComponentContext) =>
+  h("div.image-grid",
+    children.map(child => {
+      // Ensure child is an Element node with properties
+      if (typeof child === "object" && "properties" in child) {
+        const { properties } = child as Element;
+        return h("div.image-item", [
+          h("img", { src: properties?.src, alt: properties?.alt || "Image" }),
+          h("div.image-label", String(properties?.label || "Label"))
+        ]);
+      }
+      return null; // Filter out invalid children
+    }).filter(Boolean) // Remove null values
+  );
 
 export type QuartzProcessor = Processor<MDRoot, MDRoot, HTMLRoot>
 export function createProcessor(ctx: BuildCtx): QuartzProcessor {
@@ -28,8 +65,23 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
           .filter((p) => p.markdownPlugins)
           .flatMap((plugin) => plugin.markdownPlugins!(ctx)),
       )
+
+      .use(remarkDirective)
+      .use(remarkDirectiveRehype)
+
       // MD AST -> HTML AST
       .use(remarkRehype, { allowDangerousHtml: true })
+
+      // Inject rehypeComponents before other HTML transforms
+      .use(rehypeComponents, { 
+        components: {
+          "documentation-page": DocumentationPage,
+          "info-box": InfoBox,
+          "copyright-notice": CopyrightNotice,
+          "image-grid": ImageGrid,
+        }
+      })
+
       // HTML AST -> HTML AST transforms
       .use(transformers.filter((p) => p.htmlPlugins).flatMap((plugin) => plugin.htmlPlugins!(ctx)))
   )
