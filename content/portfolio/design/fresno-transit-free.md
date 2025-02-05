@@ -66,7 +66,7 @@ The team was called ScholarDev and here was our mission statement:
 
 We would eventually incorporate in August of 2012. Under the name of [ScholarDev LLC](http://scholardevapps.com/) we would specialize in the development of mobile applications. Based on my leadership contributions up to this point, I was recognized as being the General Project Manager for the company and for our first project, which became known as Fresno Transit Free.
 
-![[../../images/untaboo/design-thinking-process.png]]
+![[../../images/fresno-transit-free/scholardev-logo.png]]
 
 ## Addition / Research
 
@@ -76,9 +76,9 @@ One of the first features that was added after the class ended was a sonar featu
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Default State"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Nearby Stops Shown"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Stop Selected and User Moves Towards It"}
+::image{src="../../images/fresno-transit-free/sonar-1.png" label="Default State"}
+::image{src="../../images/fresno-transit-free/sonar-2.png" label="Nearby Stops Shown"}
+::image{src="../../images/fresno-transit-free/sonar-3.png" label="Stop Selected and User Moves Towards It"}
 
 :::
 
@@ -104,7 +104,7 @@ By the end of 2011, we were looking to improve the app’s interface. Peggy and 
 
 After translating my ideas into wireframes, I proposed the use of the action bar and dashboard navigation pattern to the rest of ScholarDev. Here were my wireframes:
 
-![[../../images/untaboo/design-thinking-process.png]]
+![[../../images/fresno-transit-free/original-redesign.jpg]]
 
 After giving everyone some time to get a feel for the proposed navigation pattern, my proposal was approved. From that point on, I started to lead the improvements that were made to the app’s user experience and user interface.
 
@@ -112,8 +112,8 @@ I implemented the action bar and new navigation pattern using some Java files th
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Dashboard"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Bus Schedule"}
+::image{src="../../images/fresno-transit-free/redesign-a.png" label="Dashboard"}
+::image{src="../../images/fresno-transit-free/redesign-b.png" label="Bus Schedule"}
 
 :::
 
@@ -123,9 +123,9 @@ After the new navigation pattern was implemented, I proposed the creation of the
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Dashboard"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Favorites"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Favorites (Item Expanded)"}
+::image{src="../../images/fresno-transit-free/favorites-1.png" label="Dashboard"}
+::image{src="../../images/fresno-transit-free/favorites-2.png" label="Favorites"}
+::image{src="../../images/fresno-transit-free/favorites-3.png" label="Favorites (Item Expanded)"}
 
 :::
 
@@ -143,12 +143,12 @@ In September, we decided to put the Sonar / Nearby Stops feature on hold once we
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Dashboard"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Route List (used by Display Routes and Bus Schedule)"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Display Routes"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Information (Item List)"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Information (Item Opened)"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Bus Schedule"}
+::image{src="../../images/fresno-transit-free/frontend-1.png" label="Dashboard"}
+::image{src="../../images/fresno-transit-free/frontend-2a.png" label="Route List (used by Display Routes and Bus Schedule)"}
+::image{src="../../images/fresno-transit-free/frontend-2b.png" label="Display Routes"}
+::image{src="../../images/fresno-transit-free/frontend-3a.png" label="Information (Item List)"}
+::image{src="../../images/fresno-transit-free/frontend-3b.png" label="Information (Item Opened)"}
+::image{src="../../images/fresno-transit-free/frontend-4.png" label="Bus Schedule"}
 
 :::
 
@@ -156,7 +156,7 @@ In the beginning of 2013, we started to have people try out the app and see what
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Screenshot"}
+::image{src="../../images/fresno-transit-free/first-action-items.png" label="Initial Action Items"}
 
 :::
 
@@ -166,7 +166,7 @@ I volunteered to fix this issue since I was the one that designed the action ite
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Two Revised Action Items (same order)"}
+::image{src="../../images/fresno-transit-free/revised-action-items.png" label="Revised Action Items (same order)"}
 
 :::
 
@@ -184,7 +184,7 @@ Here’s what the dashboard looked like after all of the dashboard icons had bee
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Screenshot"}
+::image{src="../../images/fresno-transit-free/finalized-dashboard-icons.png" label="Screenshot"}
 
 :::
 
@@ -198,25 +198,25 @@ When it came to the design of the iOS version, my plan was to use the dashboard 
 
 The key element is that a custom home button would be placed on the right hand side of the navigation bar if the user was two screens down whilst using the application. This applied to the following features: Display Routes, Information, and the Bus Schedule. Here are my wireframes, which I used to create a [POP](https://marvelapp.com/pop/) prototype:
 
-![[../../images/untaboo/design-thinking-process.png]]
+![[../../images/fresno-transit-free/ios-wireframes.jpg]]
 
 During the competition, I designed and implemented the Favorites feature, led additions that were related to fine-tuning the user interface and making it consistent with the Android version, debugged every feature, and designed and created various marketing materials.
 
 By the end of the competition, we had completed the application and were able to include the live feed prototype. We showed off our app at the showcase in June. As a personal note, this event is where it really hit me that software could positively impact people’s lives. It was great to continually get positive feedback from bus riders that said that our project would be a great asset for their daily commutes.
 
-![[../../images/untaboo/design-thinking-process.png]]
+![[../../images/about/59DOC_award.JPG]]
 
 We ended up tieing with another competitor for People’s Choice!
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Dashboard"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Display Routes"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Information (Item List)"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Information (Item Opened)"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Bus Schedule"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Favorites"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Real-Time Feed Prototype"}
+::image{src="../../images/fresno-transit-free/ios-v1-1.png" label="Dashboard"}
+::image{src="../../images/fresno-transit-free/ios-v1-2b.png" label="Display Routes"}
+::image{src="../../images/fresno-transit-free/ios-v1-3a.png" label="Information (Item List)"}
+::image{src="../../images/fresno-transit-free/ios-v1-3b.png" label="Information (Item Opened)"}
+::image{src="../../images/fresno-transit-free/ios-v1-4b.png" label="Bus Schedule"}
+::image{src="../../images/fresno-transit-free/ios-v1-5a.png" label="Favorites"}
+::image{src="../../images/fresno-transit-free/ios-v1-6.png" label="Real-Time Feed Prototype"}
 
 :::
 
@@ -230,9 +230,9 @@ So, after getting my business partner’s approval, I brought this idea back to 
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Dashboard"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Bus Schedule"}
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Display Routes"}
+::image{src="../../images/fresno-transit-free/ios7-preview-1.jpeg" label="Dashboard"}
+::image{src="../../images/fresno-transit-free/ios7-preview-2.jpeg" label="Bus Schedule"}
+::image{src="../../images/fresno-transit-free/ios7-preview-3.jpeg" label="Display Routes"}
 
 :::
 
@@ -240,7 +240,7 @@ While nearing release, I proposed that we improve the reading experience of the 
 
 :::image-grid
 
-::image{src="../../images/fresno-transit-free/initial-1.png" label="Screenshot"}
+::image{src="../../images/fresno-transit-free/ios7-info-feature-change-preview.png" label="Screenshot"}
 
 :::
 
@@ -257,11 +257,11 @@ While coordinating with FAX, we released the app in April of 2014 for both [Andr
 **As of 2016, the Android version has been downloaded more than 15,000 times on Google Play, with a 4/5 star rating.**
 
 Features:
-    - **Bus Schedule:** Arrival times for every stop that is served by FAX
-    - **Display Routes:** Depictions of each route that FAX serves
-    - **Information:** Information related to riding FAX, such as fare and transfer information
-    - **Favorites:** Allows riders to save their most used routes for quick access
-    - Quick Access to Google Maps
+- **Bus Schedule:** Arrival times for every stop that is served by FAX
+- **Display Routes:** Depictions of each route that FAX serves
+- **Information:** Information related to riding FAX, such as fare and transfer information
+- **Favorites:** Allows riders to save their most used routes for quick access
+- Quick Access to Google Maps
 
-![[../../images/untaboo/design-thinking-process.png]]
+![[../../images/fresno-transit-free/bus-placard.png]]
 
