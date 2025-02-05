@@ -42,7 +42,7 @@ const InfoBox = (props: Properties, children: ElementContent[], context: Compone
       // Ensure child is an Element node with properties
       if (typeof child === "object" && "properties" in child) {
         const { properties } = child as Element;
-        return h("div.image-item", [
+        return h("div.image", [
           h("img", { src: properties?.src, alt: properties?.alt || "Image" }),
           h("div.image-label", String(properties?.label || "Label"))
         ]);
