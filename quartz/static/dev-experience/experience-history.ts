@@ -14,6 +14,7 @@ export const devExperienceItems: ExperienceItem[] = [
                 githubURL: "https://github.com/DigitalGardeningCollective/front-porch",
                 techStack: [
                     "JavaScript",
+                    "TypeScript",
                     "HTML",
                     "CSS",
                     "Quartz (Open-Source Static-Site Generator)"
