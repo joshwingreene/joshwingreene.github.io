@@ -116,19 +116,19 @@ The product manager put the high-fidelity mock-ups together, with my guidance.
 
 When I came back to the project, I was directed to design the web version of the Shift Schedule feature. When development began for this feature, I put together a new color scheme based on the client wanting the web app to look more enticing. (the new theme was based on [https://goo.gl/KUECEr](https://goo.gl/KUECEr)) 
 
-#### Wireframes (Centered)
+::centered-title{title="Wireframes"}
 
 ![[../../images/stealth-startup/schedule-wireframe-1.png]]
 
 ![[../../images/stealth-startup/schedule-wireframe-2.png]]
 
-#### Hi-Fidelity Mockups V1 (Centered)
+::centered-title{title="Hi-Fidelity Mockups V1"}
 
 ![[../../images/stealth-startup/schedule-mockup-1.png]]
 
 ![[../../images/stealth-startup/schedule-mockup-2.png]]
 
-#### Hi-Fidelity Mockups V2 (new color scheme and layout) (Centered)
+::centered-title{title="Hi-Fidelity Mockups V2 (new color scheme and layout)"}
 
 ![[../../images/stealth-startup/schedule-mockup-v2-1.png]]
 
