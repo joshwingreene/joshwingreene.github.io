@@ -34,12 +34,13 @@ export const DesignSection: QuartzComponent = ({ cfg, fileData, allFiles, limit 
             const title = page.frontmatter?.title
             const hoverImage = page.frontmatter?.["hover-image"];
             const coverImageAltText = page.frontmatter?.["cover-image-alt-text"];
+            const notReady = page.frontmatter?.["not-ready"];
 
             return (
                 <div>
                     <a href={resolveRelative(fileData.slug!, page.slug!)}>
                         <img 
-                            class="design-img" 
+                            class={`design-img ${notReady ? "not-ready" : ""}`}
                             src={`../../static/item-cover/${hoverImage}`} 
                             alt={`${coverImageAltText && typeof coverImageAltText === "string" ? 
                                 coverImageAltText : 
@@ -63,6 +64,9 @@ DesignSection.css = `
         display: block;
         background-size: cover;
         background-position: center;
+    }
+    .not-ready {
+        opacity: 0.5;
     }
 `
 

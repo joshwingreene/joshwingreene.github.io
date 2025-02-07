@@ -412,21 +412,27 @@ We integrated the client’s feedback into our usability tests. This is what we 
 
 The is the crux of the app. So, we wanted to test whether the flow made sense to people and if the process seemed too long.
 
-**Relevant Images (Hover Over)**
+**Relevant Images**
 
-- [Requesting Help - Step 1](../../images/untaboo/request-1.png)
+:::image-grid
 
-- [The location where users will be able to find requests for help](../../images/untaboo/notification-1.png)
+::image{src="../../images/untaboo/request-1.png" label="Requesting Help - Step 1"}
+::image{src="../../images/untaboo/notification-1.png" label="The location where users will be able to find requests for help"}
+::image{src="../../images/untaboo/responder-1.png" label="Responding to a Request - Step 1"}
 
-- [Responding to a Request - Step 1](../../images/untaboo/responder-1.png)
+:::
 
 **Rationale**
 
 Besides testing the flow, we wanted to test whether people were able to understand what the circled numbers on the map represented.
 
-**Relevant Images (Hover Over)**
+**Relevant Image**
 
-[Select a responder - The circled numbers represent the approximate location of the listed individual.](../../images/untaboo/seattle-results-list.png)
+:::image-grid
+
+::image{src="../../images/untaboo/seattle-results-list.png" label="Select a responder - The circled numbers represent the approximate location of the listed individual."}
+
+:::
 
 #### International Version - Choosing where to meet
 
@@ -434,10 +440,14 @@ Besides testing the flow, we wanted to test whether people were able to understa
 
 We mainly wanted to see whether the presented information about a location would allow the user to gauge how safe the location was to meet with a stranger in foreign location.
 
-**Relevant Image (Hover Over)**
+**Relevant Images**
 
-- [Select Meeting Location - Step 1](../../images/untaboo/international-choose-meeting-loc-1.png)
-- [Select Meeting Location - Step 2](../../images/untaboo/international-choose-meeting-loc-2.png) 
+:::image-grid
+
+::image{src="../../images/untaboo/international-choose-meeting-loc-1.png" label="Select Meeting Location - Step 1"}
+::image{src="../../images/untaboo/international-choose-meeting-loc-2.png" label="Select Meeting Location - Step 2"}
+
+:::
 
 #### Auto-Translation Messaging Feature & Rating Screen
 
@@ -445,12 +455,16 @@ We mainly wanted to see whether the presented information about a location would
 
 We wanted to see if this feature and the rating screen made sense to the user.
 
-**Relevant Images (Hover Over)**
+**Relevant Images**
 
-- [Step 1](../../images/untaboo/international-meeting-details-set.png)
-- [Step 2](../../images/untaboo/messaging-1.png)
-- [Step 3](../../images/untaboo/messaging-2.png)
-- [Step 4](../../images/untaboo/rating-screen.png)
+:::image-grid
+
+::image{src="../../images/untaboo/international-meeting-details-set.png" label="Step 1"}
+::image{src="../../images/untaboo/messaging-1.png" label="Step 2"}
+::image{src="../../images/untaboo/messaging-2.png" label="Step 3"}
+::image{src="../../images/untaboo/rating-screen.png" label="Step 4"}
+
+:::
 
 Besides testing these items, we also had pre and post-test questions. Here’s a quick glimpse: 
 

@@ -2,6 +2,7 @@ import { QuartzEmitterPlugin } from "../types"
 import { QuartzComponentProps } from "../../components/types"
 import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
+import DesignSectionConstructor from "../../components/DesignSection"
 import { pageResources, renderPage } from "../../components/renderPage"
 import { ProcessedContent, defaultProcessedContent } from "../vfile"
 import { FullPageLayout } from "../../cfg"
@@ -32,12 +33,14 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpt
   const { head: Head, header, beforeBody, pageBody, left, right, footer: Footer } = opts
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
+  const DesignSection = DesignSectionConstructor()
 
   return {
     name: "FolderPage",
     getQuartzComponents() {
       return [
         Head, Header, Body, ...header, ...beforeBody, pageBody, ...left, ...right, Footer,
+        DesignSection,
       ]
     },
     async getDependencyGraph(_ctx, content, _resources) {
