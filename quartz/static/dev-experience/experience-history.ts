@@ -254,6 +254,7 @@ export const devExperienceItems: ExperienceItem[] = [
     },
     {
         title: "Stealth Startup: The Uber for Exotic Dancers",
+        learnMoreURL: "../../portfolio/design/stealth-startup-dancers",
         roles: ["React Developer", "React Native Developer", "UI/UX Designer"],
         duration: "Mar 2018 - Dec 2018 (7 months total; temporarily left the project from Jul to Oct)",
         image: { name: "../item-cover/stealth-startup-dancers-preview.png", isSquare: true },
@@ -276,6 +277,7 @@ export const devExperienceItems: ExperienceItem[] = [
     },
     {
         title: "59DaysofCode 2018 Hackathon Entry - Korey",
+        learnMoreURL: "../../portfolio/design/pocket-ux-case-study",
         roles: ["Project Lead", "Software Developer, Product Designer"],  
         duration: "Jun 2018 - Aug 2018 (occurred while I temporarily left the above project)",
         image: { name: "korey-preview.png", isSquare: false, hasBorder: true },
