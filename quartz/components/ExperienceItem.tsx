@@ -78,7 +78,7 @@ export default ((userOpts?: Options) => {
                         <h3>{experienceItem.title}</h3>
                         { experienceItem.roles && <h4>{experienceItem.roles.join(', ')}</h4> }
                         <p class="experience-duration">{experienceItem.duration}</p>
-                        <p><span>Description:</span> {experienceItem.description}</p>
+                        <p><span>Description:</span> {experienceItem.description}{' '}{ experienceItem.learnMoreURL && <a href={experienceItem.learnMoreURL} target="_target">Learn More...</a> }</p>
                         { renderPHAndGitHubLinks(experienceItem.productHuntLaunchURL, experienceItem.githubURL) }
                         { experienceItem.techStack && <p><span>Technologies: </span>{experienceItem.techStack.join(', ')}</p> }
                         <ul>

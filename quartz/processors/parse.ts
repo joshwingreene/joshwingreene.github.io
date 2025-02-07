@@ -25,8 +25,8 @@ const DocumentationPage = (props: Properties, children: ElementContent[], contex
      ...children
   ]);
 
-  const CopyrightNotice = (props: Properties, children: ElementContent[], context: ComponentContext) =>
-  h("footer.notice", `© ${props.year}`);
+const CopyrightNotice = (props: Properties, children: ElementContent[], context: ComponentContext) =>
+h("footer.notice", `© ${props.year}`);
 
 const InfoBox = (props: Properties, children: ElementContent[], context: ComponentContext) =>
   h(
@@ -36,7 +36,7 @@ const InfoBox = (props: Properties, children: ElementContent[], context: Compone
     ]
   );
 
-  const ImageGrid = (_props: Properties, children: ElementContent[], _context: ComponentContext) =>
+const ImageGrid = (_props: Properties, children: ElementContent[], _context: ComponentContext) =>
   h("div.image-grid",
     children.map(child => {
       // Ensure child is an Element node with properties
@@ -49,7 +49,15 @@ const InfoBox = (props: Properties, children: ElementContent[], context: Compone
       }
       return null; // Filter out invalid children
     }).filter(Boolean) // Remove null values
-  );
+);
+
+interface CustomProperties {
+  title?: string;
+  color?: string;
+}
+
+const CenteredTitle = (props: CustomProperties, children: ElementContent[], context: ComponentContext) =>
+  h("p.centered-title", { style: { color: props.color || "black" }}, String(props.title || "Default title"));
 
 export type QuartzProcessor = Processor<MDRoot, MDRoot, HTMLRoot>
 export function createProcessor(ctx: BuildCtx): QuartzProcessor {
@@ -75,10 +83,8 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
       // Inject rehypeComponents before other HTML transforms
       .use(rehypeComponents, { 
         components: {
-          "documentation-page": DocumentationPage,
-          "info-box": InfoBox,
-          "copyright-notice": CopyrightNotice,
           "image-grid": ImageGrid,
+          "centered-title": CenteredTitle,
         }
       })
 

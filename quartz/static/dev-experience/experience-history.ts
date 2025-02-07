@@ -402,6 +402,7 @@ export const devExperienceItems: ExperienceItem[] = [
       title: "Fresno Transit Free",
       roles: ["Co-Founder", "General Project Manager", "Mobile App Developer", "Designer"],
       duration: "Aug 2011 - Apr 2014",
+      learnMoreURL: "../../portfolio/design/fresno-transit-free",
       image: { name: "ftf-dev-preview.png", isSquare: false },
       description: "A mobile bus schedule that improves the experience of Fresno Area Express bus riders.",
       techStack: [
