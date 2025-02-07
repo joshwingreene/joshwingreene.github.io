@@ -24,15 +24,9 @@ const config: QuartzConfig = {
         title: "Welcome!",
         firstLeadUp: "The name's",
         secondLeadUp: "and I'm a",
-        whatIDo: ["Technical Writer", "Software Developer", "Designer", "Digital Gardener"],
+        whatIDo: ["Software Developer", "Product Designer", "Technical Writer", "Digital Gardener"],
       },
       showcaseItems: [
-        {
-          image: "technical-writing-showcase-image.jpg",
-          title: "Technical Writing Experience",
-          description: "I have created documentation for development processes, marketing copy for a product launch, set up instructions for an open-source project, and etc.",
-          pathnameOrUrl: "portfolio/technical-writing",
-        },
         {
           image: "developer-showcase-image.jpg",
           title: "Software Development Experience",
@@ -44,7 +38,13 @@ const config: QuartzConfig = {
           title: "UX, UI, and Misc. Design Experience",
           description: "I have designed mobile apps, web apps, websites, and miscellanous design assets.",
           pathnameOrUrl: "portfolio/design",
-        }
+        },
+        {
+          image: "technical-writing-showcase-image.jpg",
+          title: "Technical Writing Experience",
+          description: "I have created documentation for development processes, marketing copy for a product launch, set up instructions for an open-source project, and etc.",
+          pathnameOrUrl: "portfolio/technical-writing",
+        },
       ],
     },
     gardenPageData: {

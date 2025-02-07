@@ -8,9 +8,3 @@ The name's Joshwin and I'm a Design-minded Full-Stack Developer. I got my start 
 Here’s a picture of my team and I when we tied for People’s Choice in a local hackathon called 59DaysofCode in 2013:
 
 ![[/images/about/59DOC_award.JPG]]
-
-After gaining approximately five years of formal experience as a software developer, I'm now transitioning to Technical Writing. Why am I switching? To put it simply, I'm not a fan of the LeetCode-centric interview style of software engineering interviews, and I feel like the field is oversaturated. So, based on my [technical](https://joshwingreene.com/portfolio/dev/) and [user experience design](https://joshwingreene.com/portfolio/design/) backgrounds, my curiosity for tech, and my interest in writing, I believe that technical writing is a good fit for me.
-
-Here's my answer to a recent question about what I enjoy about technical communication and writing:
-
-> "My father makes it a point to frequently publish essays in the newspapers in my hometown. Because of this, I think his hobby rubbed off of me and got me interested in using the written word to spread my ideas with the world. As for technical communication, I like how I can combine my interest in writing with my technical know-how. I'm also a note-taking and personal knowledge management enthusiast. So, technical communication is right up my alley."
