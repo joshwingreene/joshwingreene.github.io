@@ -422,6 +422,8 @@ The is the crux of the app. So, we wanted to test whether the flow made sense to
 
 :::
 
+#### Choosing who will help you
+
 **Rationale**
 
 Besides testing the flow, we wanted to test whether people were able to understand what the circled numbers on the map represented.
