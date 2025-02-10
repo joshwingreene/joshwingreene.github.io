@@ -65,7 +65,7 @@ export const devExperienceItems: ExperienceItem[] = [
         ]
     },
     {
-        title: "Bitwise Technology Services",
+        title: "Bitwise Industries",
         roles: ["Software Developer"],
         duration: "Jan 2022 - Jun 2023 (On May 29th, everyone was furloughed and then laid off in June.)",
         image: { name: "bitwise-boilerplate-preview.png", isSquare: true, hasBorder: true },
