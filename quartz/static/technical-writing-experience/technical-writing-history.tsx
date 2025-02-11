@@ -2,28 +2,6 @@ import { TechnicalWritingItem } from "../../components/ExperienceCard";
 
 export const technicalWritingExperienceItems: TechnicalWritingItem[] = [
     {
-        title: "Technical Writer HQ's Capstone Project",
-        description: "This project encompasses seven technical writing documents. The listed items are my planned deliverables. Potential employers, feel free to request expedited creation of any of the listed documents.",
-        duration: "Dec 2024 - Present",
-        selectedDeliverables: [
-            {
-                title: "Docusaurus-based User Guide for Front Porch",
-            },
-            {
-                title: "API Writing Sample",
-            },
-            {
-                title: "Release Notes (for the next version of Front Porch)",
-            },
-            {
-                title: "Competitive Analysis Document (comparing Front Porch to other similar projects)",
-            },
-            {
-                title: "FAQ Document (for Front Porch)",
-            }
-        ]
-    },
-    {
         title: "Front Porch",
         description: "I created an open-source fork of Quartz that serves as a person's website, digital garden, portfolio, 'now' log, and blogroll.",
         duration: "Dec 2023 - Mar 2024",
