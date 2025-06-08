@@ -10,6 +10,12 @@ html {
   width: 100vw;
 }
 
+p {
+  img {
+    border: 1px solid #ddd;
+  }
+}
+
 body,
 section {
   margin: 0;

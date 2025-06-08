@@ -1,8 +1,14 @@
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: 1fr;
   gap: 16px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(var(--desktop-columns, 4), 1fr);
+  }
 }
 
 .image {

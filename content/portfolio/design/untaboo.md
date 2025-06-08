@@ -414,7 +414,7 @@ The is the crux of the app. So, we wanted to test whether the flow made sense to
 
 **Relevant Images**
 
-:::image-grid
+:::image-grid{columns=3}
 
 ::image{src="../../images/untaboo/request-1.png" label="Requesting Help - Step 1"}
 ::image{src="../../images/untaboo/notification-1.png" label="The location where users will be able to find requests for help"}
@@ -430,7 +430,7 @@ Besides testing the flow, we wanted to test whether people were able to understa
 
 **Relevant Image**
 
-:::image-grid
+:::image-grid{columns=1}
 
 ::image{src="../../images/untaboo/seattle-results-list.png" label="Select a responder - The circled numbers represent the approximate location of the listed individual."}
 
@@ -444,7 +444,7 @@ We mainly wanted to see whether the presented information about a location would
 
 **Relevant Images**
 
-:::image-grid
+:::image-grid{columns=2}
 
 ::image{src="../../images/untaboo/international-choose-meeting-loc-1.png" label="Select Meeting Location - Step 1"}
 ::image{src="../../images/untaboo/international-choose-meeting-loc-2.png" label="Select Meeting Location - Step 2"}

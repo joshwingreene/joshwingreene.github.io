@@ -36,20 +36,26 @@ const InfoBox = (props: Properties, children: ElementContent[], context: Compone
     ]
   );
 
-const ImageGrid = (_props: Properties, children: ElementContent[], _context: ComponentContext) =>
-  h("div.image-grid",
-    children.map(child => {
-      // Ensure child is an Element node with properties
-      if (typeof child === "object" && "properties" in child) {
-        const { properties } = child as Element;
-        return h("div.image", [
-          h("img", { src: properties?.src, alt: properties?.alt || "Image" }),
-          h("div.image-label", String(properties?.label || "Label"))
-        ]);
-      }
-      return null; // Filter out invalid children
-    }).filter(Boolean) // Remove null values
-);
+  const ImageGrid = (props: Properties, children: ElementContent[], _context: ComponentContext) => {
+    const desktopColumns = props.columns || 4; // default to 4 columns on desktop
+  
+    return h("div", {
+      class: "image-grid",
+      style: `--desktop-columns: ${desktopColumns}`
+    },
+      children.map(child => {
+        if (typeof child === "object" && "properties" in child) {
+          const { properties } = child as Element;
+          const label = properties?.label;
+          return h("div.image", [
+            h("img", { src: properties?.src, alt: properties?.alt || "Image" }),
+            label ? h("div.image-label", String(properties?.label || "Label")) : null
+          ]);
+        }
+        return null;
+      }).filter(Boolean)
+    );
+  };
 
 interface CustomProperties {
   title?: string;

@@ -74,7 +74,7 @@ We would eventually incorporate in August of 2012. Under the name of [ScholarDev
 
 One of the first features that was added after the class ended was a sonar feature. As the name implies, this feature would allow users to be able to find bus stops within a certain radius from their current location.The user would be able to pick a stop and then hone in on the stop as they walked towards it. The sonar feature would then tell in intervals how many feet/miles they were away from a particular stop. This feature was also known as the Nearby Stops feature.
 
-:::image-grid
+:::image-grid{columns=3}
 
 ::image{src="../../images/fresno-transit-free/sonar-1.png" label="Default State"}
 ::image{src="../../images/fresno-transit-free/sonar-2.png" label="Nearby Stops Shown"}
@@ -110,7 +110,7 @@ After giving everyone some time to get a feel for the proposed navigation patter
 
 I implemented the action bar and new navigation pattern using some Java files that I found online. One that would allow me to show the feature icons in a grid and another that would show an action bar (now called a toolbar) at the top of the application.
 
-:::image-grid
+:::image-grid{columns=2}
 
 ::image{src="../../images/fresno-transit-free/redesign-a.png" label="Dashboard"}
 ::image{src="../../images/fresno-transit-free/redesign-b.png" label="Bus Schedule"}
@@ -121,7 +121,7 @@ I implemented the action bar and new navigation pattern using some Java files th
 
 After the new navigation pattern was implemented, I proposed the creation of the favorites feature. Since the main use of the app would be to view the bus schedule or a specific bus route, I thought it would be a good idea if users were able to favorite their most used routes in order to quickly access scheduling and route information. This proposal was approved and I was assigned the task of designing and implementing the feature, which was completed in July of 2012.
 
-:::image-grid
+:::image-grid{columns=3}
 
 ::image{src="../../images/fresno-transit-free/favorites-1.png" label="Dashboard"}
 ::image{src="../../images/fresno-transit-free/favorites-2.png" label="Favorites"}
@@ -154,7 +154,7 @@ In September, we decided to put the Sonar / Nearby Stops feature on hold once we
 
 In the beginning of 2013, we started to have people try out the app and see what they thought of it. One criticism that was brought to our attention was how the action items for the bus schedule feature were unclear.
 
-:::image-grid
+:::image-grid{columns=1}
 
 ::image{src="../../images/fresno-transit-free/first-action-items.png" label="Initial Action Items"}
 
@@ -164,7 +164,7 @@ In the image above, you will see a B and D on the top right side of the bus sche
 
 I volunteered to fix this issue since I was the one that designed the action items for this feature. Based on the design guidelines at the time, it made sense to make use of icons instead of letters. So, I first looked for action-item-ready icons that were the most relevant for their individual use cases. It was easy to find an icon for changing the day type. However, I couldn’t find an icon that matched the change bound function. Since I was taking an Adobe Illustrator class at the time, I decided to create the icon myself. After deliberating on how to make the icon more pronounced, the final version was selected after I created two revised versions of the icon.
 
-:::image-grid
+:::image-grid{columns=1}
 
 ::image{src="../../images/fresno-transit-free/revised-action-items.png" label="Revised Action Items (same order)"}
 
@@ -182,7 +182,7 @@ In order to find a graphic artist who we could routinely work with, we decided t
 
 Here’s what the dashboard looked like after all of the dashboard icons had been created and finalized (and after some additional fine-tuning):
 
-:::image-grid
+:::image-grid{columns=1}
 
 ::image{src="../../images/fresno-transit-free/finalized-dashboard-icons.png" label="Screenshot"}
 
@@ -228,7 +228,7 @@ In August of 2013, I learned that iOS 7 would be released in September. After re
 
 So, after getting my business partner’s approval, I brought this idea back to the rest of my business partners. After much deliberation, we decided to push back the release date of our app so that we could update the iOS version to iOS 7 and release both versions at the same time.
 
-:::image-grid
+:::image-grid{columns=3}
 
 ::image{src="../../images/fresno-transit-free/ios7-preview-1.jpeg" label="Dashboard"}
 ::image{src="../../images/fresno-transit-free/ios7-preview-2.jpeg" label="Bus Schedule"}
@@ -238,7 +238,7 @@ So, after getting my business partner’s approval, I brought this idea back to 
 
 While nearing release, I proposed that we improve the reading experience of the Information feature. What this meant is that instead of just showing unstylized text, we would bold text where it made sense. By doing this, I believed that it would tell people that we truly cared about the user's experience. I implemented these changes on both platforms.
 
-:::image-grid
+:::image-grid{columns=1}
 
 ::image{src="../../images/fresno-transit-free/ios7-info-feature-change-preview.png" label="Screenshot"}
 
