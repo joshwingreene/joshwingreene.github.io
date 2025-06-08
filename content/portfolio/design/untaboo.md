@@ -482,6 +482,12 @@ Here's a quick video of our findings and recommendations for the project moving 
 
 ![[../../vid/untaboo/untaboo-findings-and-recommendations.mp4]]
 
+### Style Guide
+
+Here's the style guide that we prepared for the client (we used Sketch):
+
+![[../../images/untaboo/untaboo-style-guide.png]]
+
 ### Final Hand-off Meeting
 
 For our final meeting, the client invited us to one last meeting where she and her team would be in attendance, which included the developers that she recently brought onto the project.
