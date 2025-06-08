@@ -184,42 +184,52 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
         </li>
       ) : (
         <li>
-          {node.name !== "" && (
-            // Node with entire folder
-            // Render svg button + folder name, then children
-            <div class="folder-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="5 8 14 8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="folder-icon"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-              {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
-              <div key={node.name} data-folderpath={folderPath}>
-                {folderBehavior === "link" ? (
-                  <a
-                    href={resolveRelative(fileData.slug!, folderPath as SimpleSlug)}
-                    data-for={node.name}
-                    class="folder-title"
+          {node.name !== "" && ( 
+              node.children.length !== 0 ? (
+                // Node with entire folder
+                // Render svg button + folder name, then children
+                <div class="folder-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="5 8 14 8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="folder-icon"
                   >
-                    {node.displayName}
-                  </a>
-                ) : (
-                  <button class="folder-button">
-                    <span class="folder-title">{node.displayName}</span>
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                  {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
+                  <div key={node.name} data-folderpath={folderPath}>
+                    {folderBehavior === "link" ? (
+                      <a
+                        href={resolveRelative(fileData.slug!, folderPath as SimpleSlug)}
+                        data-for={node.name}
+                        class="folder-title"
+                      >
+                        {node.displayName}
+                      </a>
+                    ) : (
+                        <button class="folder-button">
+                          <span class="folder-title">{node.displayName}</span>
+                        </button>
+                    )}
+                  </div>
+                </div>
+              ) :
+              (
+                {
+                  'Software Development Experience': <a href='../../portfolio/dev'>Software Development Experience</a>,
+                  'Technical Writing Experience': <a href='../../portfolio/technical-writing'>Technical Writing Experience</a>,
+                  'Front Porch': null
+                }[node.displayName]
+              )
+          )
+        }
           {/* Recursively render children of folder */}
           <div class={`folder-outer ${node.depth === 0 || isDefaultOpen ? "open" : ""}`}>
             <ul

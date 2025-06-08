@@ -91,6 +91,7 @@ export const portfolioItemPageLayout: PageLayout = {
     Component.Divider()
   ],
   left: [
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
