@@ -59,6 +59,7 @@ export const DesignSection: QuartzComponent = ({ cfg, fileData, allFiles, limit 
 
 DesignSection.css = `
     .design-img {
+        margin: 0;
         width: 100%;
         height: auto;
         display: block;
