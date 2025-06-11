@@ -60,6 +60,10 @@ const isLink = (data: unknown): data is Link => {
     return isObject(data) && data.url !== undefined;
 }
 
+const isTextOnly = (data: unknown): data is { title: string } => {
+    return isObject(data) && data.url === undefined;
+}
+
 const renderPHAndGitHubLinks = (productHuntLaunchURL: string | undefined, githubURL: string | undefined) => {
     return (productHuntLaunchURL || githubURL) &&
                 <p><span>Links: </span>
@@ -120,6 +124,8 @@ export default ((userOpts?: Options) => {
                                                     {item.subItems.map((subItem) => {
                                                         if (isLink(subItem)) {
                                                             return <li><a href={subItem.url} target="_target">{ subItem.title }</a></li>
+                                                        } else if (isTextOnly(subItem)) {
+                                                            return <li>{ subItem.title }</li>
                                                         } else {
                                                             return <li>{subItem}</li>
                                                         }
